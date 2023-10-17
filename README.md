@@ -1,1 +1,4 @@
-# Data-Caree-Portfolio
+# Data-Career-Portfolio
+
+## Projects
+### Data Engineer Project
