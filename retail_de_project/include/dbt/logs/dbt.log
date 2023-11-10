@@ -1,0 +1,1574 @@
+[0m15:49:45.592438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c813d3f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c81408e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c8140a3d0>]}
+
+
+============================== 15:49:45.598876 | c4b226a6-a486-448e-9113-fed7268f0182 ==============================
+[0m15:49:45.598876 [info ] [MainThread]: Running with dbt=1.7.1
+[0m15:49:45.601060 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'invocation_command': 'dbt deps', 'write_json': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'quiet': 'False', 'target_path': 'None', 'printer_width': '80', 'no_print': 'None', 'use_colors': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'introspect': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'profiles_dir': '/usr/local/airflow/include/dbt', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m15:49:45.847799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c4b226a6-a486-448e-9113-fed7268f0182', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c82286110>]}
+[0m15:49:45.855667 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-plevc21l'
+[0m15:49:45.857701 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:49:46.360973 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:49:46.365649 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:49:46.661437 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:49:46.679568 [info ] [MainThread]: Updating lock file in file path: /usr/local/airflow/include/dbt/package-lock.yml
+[0m15:49:46.690309 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-bihqmyb4'
+[0m15:49:46.695043 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:49:53.575136 [info ] [MainThread]: Installed from version 1.1.1
+[0m15:49:53.577299 [info ] [MainThread]: Up to date!
+[0m15:49:53.579065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'c4b226a6-a486-448e-9113-fed7268f0182', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c816e9090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c816eab90>]}
+[0m15:49:53.582690 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 8.079944, "process_user_time": 2.590981, "process_kernel_time": 2.230581, "process_mem_max_rss": "120808", "process_in_blocks": "33080", "process_out_blocks": "200"}
+[0m15:49:53.584858 [debug] [MainThread]: Command `dbt deps` succeeded at 15:49:53.584605 after 8.08 seconds
+[0m15:49:53.586464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c81069690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c8106aa90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c81779610>]}
+[0m15:49:53.587939 [debug] [MainThread]: Flushing usage events
+[0m15:50:27.692143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9293e895d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9293e71350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9293912d50>]}
+
+
+============================== 15:50:27.697800 | 40642ca3-0685-45af-8773-e2b5a7252c86 ==============================
+[0m15:50:27.697800 [info ] [MainThread]: Running with dbt=1.7.1
+[0m15:50:27.699924 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error': 'None', 'quiet': 'False', 'introspect': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'log_format': 'default', 'log_path': '/usr/local/airflow/include/dbt/logs', 'no_print': 'None', 'printer_width': '80', 'use_experimental_parser': 'False', 'debug': 'False', 'target_path': 'None', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'static_parser': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True', 'cache_selected_only': 'False'}
+[0m15:50:29.517470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '40642ca3-0685-45af-8773-e2b5a7252c86', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f925dad8610>]}
+[0m15:50:29.610354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '40642ca3-0685-45af-8773-e2b5a7252c86', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f92939234d0>]}
+[0m15:50:29.613235 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m15:50:29.662986 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m15:50:29.677645 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:50:29.679584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '40642ca3-0685-45af-8773-e2b5a7252c86', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f925d88c5d0>]}
+[0m15:50:29.837901 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading retail: sources/sources.yml - Runtime Error
+    Syntax error near line 8
+    ------------------------------
+    5  |     database: online-retail-project # Put the project id!
+    6  |     tables:
+    7  |       - name: raw_invoices
+    8  | 			- name: country
+    
+    Raw Error:
+    ------------------------------
+    while scanning a plain scalar
+      in "<unicode string>", line 7, column 15
+    found a tab character that violates indentation
+      in "<unicode string>", line 8, column 1
+[0m15:50:29.841064 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 2.2081294, "process_user_time": 3.805617, "process_kernel_time": 1.567018, "process_mem_max_rss": "256844", "process_in_blocks": "18768", "command_success": false, "process_out_blocks": "0"}
+[0m15:50:29.843300 [debug] [MainThread]: Command `dbt run` failed at 15:50:29.843041 after 2.21 seconds
+[0m15:50:29.845773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9293937810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9293c02c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9293cb2410>]}
+[0m15:50:29.849329 [debug] [MainThread]: Flushing usage events
+[0m15:50:50.744232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9964784a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99668de650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9964a59d50>]}
+
+
+============================== 15:50:50.750215 | c47662eb-26f8-4c84-adff-456faa909f35 ==============================
+[0m15:50:50.750215 [info ] [MainThread]: Running with dbt=1.7.1
+[0m15:50:50.752380 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'indirect_selection': 'eager', 'no_print': 'None', 'version_check': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'warn_error': 'None', 'static_parser': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'write_json': 'True', 'partial_parse': 'True', 'debug': 'False', 'quiet': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'log_cache_events': 'False', 'introspect': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'use_colors': 'True'}
+[0m15:50:51.997333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c47662eb-26f8-4c84-adff-456faa909f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9964cd4290>]}
+[0m15:50:52.135103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c47662eb-26f8-4c84-adff-456faa909f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99649dc310>]}
+[0m15:50:52.138022 [info ] [MainThread]: Registered adapter: bigquery=1.7.1
+[0m15:50:52.203681 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m15:50:52.222104 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:50:52.224537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c47662eb-26f8-4c84-adff-456faa909f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f992e735c10>]}
+[0m15:50:55.463124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c47662eb-26f8-4c84-adff-456faa909f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f992e6a2b50>]}
+[0m15:50:55.509232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c47662eb-26f8-4c84-adff-456faa909f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f992c301450>]}
+[0m15:50:55.511285 [info ] [MainThread]: Found 4 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m15:50:55.513689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c47662eb-26f8-4c84-adff-456faa909f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f992e6498d0>]}
+[0m15:50:55.517403 [info ] [MainThread]: 
+[0m15:50:55.520074 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:50:55.524711 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_online-retail-project'
+[0m15:50:55.526707 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:50:56.733237 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-project, now list_online-retail-project_retail)
+[0m15:50:56.735536 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:50:57.630483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c47662eb-26f8-4c84-adff-456faa909f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f992e545c10>]}
+[0m15:50:57.632928 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:50:57.634717 [info ] [MainThread]: 
+[0m15:50:57.643668 [debug] [Thread-1 (]: Began running node model.retail.dim_customer
+[0m15:50:57.646168 [info ] [Thread-1 (]: 1 of 4 START sql table model retail.dim_customer ............................... [RUN]
+[0m15:50:57.648633 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-project_retail, now model.retail.dim_customer)
+[0m15:50:57.650378 [debug] [Thread-1 (]: Began compiling node model.retail.dim_customer
+[0m15:50:57.665196 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.dim_customer"
+[0m15:50:57.701905 [debug] [Thread-1 (]: Timing info for model.retail.dim_customer (compile): 15:50:57.651879 => 15:50:57.701260
+[0m15:50:57.703894 [debug] [Thread-1 (]: Began executing node model.retail.dim_customer
+[0m15:50:57.752331 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.dim_customer"
+[0m15:50:57.785967 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:50:57.829477 [debug] [Thread-1 (]: On model.retail.dim_customer: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.dim_customer"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`dim_customer`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- dim_customer.sql
+
+-- Create the dimension table
+WITH customer_cte AS (
+	SELECT DISTINCT
+	    to_hex(md5(cast(coalesce(cast(CustomerID as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(Country as string), '_dbt_utils_surrogate_key_null_') as string))) as customer_id,
+	    Country AS country
+	FROM `online-retail-project`.`retail`.`raw_invoices`
+	WHERE CustomerID IS NOT NULL
+)
+SELECT
+    t.*,
+	cm.alpha3Code
+FROM customer_cte t
+LEFT JOIN `online-retail-project`.`retail`.`country` cm ON t.country = cm.name
+    );
+  
+[0m15:50:59.093607 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:8dc8357b-27d6-478e-9729-58f304900894&page=queryresults
+[0m15:51:02.565660 [debug] [Thread-1 (]: Timing info for model.retail.dim_customer (execute): 15:50:57.705406 => 15:51:02.565121
+[0m15:51:02.569034 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c47662eb-26f8-4c84-adff-456faa909f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f992e587290>]}
+[0m15:51:02.572099 [info ] [Thread-1 (]: 1 of 4 OK created sql table model retail.dim_customer .......................... [[32mCREATE TABLE (4.4k rows, 11.1 MiB processed)[0m in 4.92s]
+[0m15:51:02.575012 [debug] [Thread-1 (]: Finished running node model.retail.dim_customer
+[0m15:51:02.578000 [debug] [Thread-1 (]: Began running node model.retail.dim_datetime
+[0m15:51:02.580354 [info ] [Thread-1 (]: 2 of 4 START sql table model retail.dim_datetime ............................... [RUN]
+[0m15:51:02.583091 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.dim_customer, now model.retail.dim_datetime)
+[0m15:51:02.585691 [debug] [Thread-1 (]: Began compiling node model.retail.dim_datetime
+[0m15:51:02.592439 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.dim_datetime"
+[0m15:51:02.612090 [debug] [Thread-1 (]: Timing info for model.retail.dim_datetime (compile): 15:51:02.587491 => 15:51:02.611405
+[0m15:51:02.614807 [debug] [Thread-1 (]: Began executing node model.retail.dim_datetime
+[0m15:51:02.623022 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.dim_datetime"
+[0m15:51:02.643783 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:02.701355 [debug] [Thread-1 (]: On model.retail.dim_datetime: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.dim_datetime"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`dim_datetime`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- dim_datetime.sql
+
+-- Create a CTE to extract date and time components
+WITH datetime_cte AS (  
+  SELECT DISTINCT
+    InvoiceDate AS datetime_id,
+    CASE
+      WHEN LENGTH(InvoiceDate) = 16 THEN
+        -- Date format: "DD/MM/YYYY HH:MM"
+        PARSE_DATETIME('%m/%d/%Y %H:%M', InvoiceDate)
+      WHEN LENGTH(InvoiceDate) <= 14 THEN
+        -- Date format: "MM/DD/YY HH:MM"
+        PARSE_DATETIME('%m/%d/%y %H:%M', InvoiceDate)
+      ELSE
+        NULL
+    END AS date_part,
+  FROM `online-retail-project`.`retail`.`raw_invoices`
+  WHERE InvoiceDate IS NOT NULL
+)
+SELECT
+  datetime_id,
+  date_part as datetime,
+  EXTRACT(YEAR FROM date_part) AS year,
+  EXTRACT(MONTH FROM date_part) AS month,
+  EXTRACT(DAY FROM date_part) AS day,
+  EXTRACT(HOUR FROM date_part) AS hour,
+  EXTRACT(MINUTE FROM date_part) AS minute,
+  EXTRACT(DAYOFWEEK FROM date_part) AS weekday
+FROM datetime_cte
+    );
+  
+[0m15:51:03.941895 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:4b968a82-7229-4839-81e7-14ae6bd1d953&page=queryresults
+[0m15:51:07.636819 [debug] [Thread-1 (]: Timing info for model.retail.dim_datetime (execute): 15:51:02.617499 => 15:51:07.636526
+[0m15:51:07.639461 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c47662eb-26f8-4c84-adff-456faa909f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f992c338d50>]}
+[0m15:51:07.641416 [info ] [Thread-1 (]: 2 of 4 OK created sql table model retail.dim_datetime .......................... [[32mCREATE TABLE (23.3k rows, 7.7 MiB processed)[0m in 5.06s]
+[0m15:51:07.643520 [debug] [Thread-1 (]: Finished running node model.retail.dim_datetime
+[0m15:51:07.645464 [debug] [Thread-1 (]: Began running node model.retail.dim_product
+[0m15:51:07.647193 [info ] [Thread-1 (]: 3 of 4 START sql table model retail.dim_product ................................ [RUN]
+[0m15:51:07.649348 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.dim_datetime, now model.retail.dim_product)
+[0m15:51:07.650961 [debug] [Thread-1 (]: Began compiling node model.retail.dim_product
+[0m15:51:07.662646 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.dim_product"
+[0m15:51:07.680924 [debug] [Thread-1 (]: Timing info for model.retail.dim_product (compile): 15:51:07.652467 => 15:51:07.680109
+[0m15:51:07.683455 [debug] [Thread-1 (]: Began executing node model.retail.dim_product
+[0m15:51:07.691518 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.dim_product"
+[0m15:51:07.710213 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:07.757702 [debug] [Thread-1 (]: On model.retail.dim_product: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.dim_product"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`dim_product`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- dim_product.sql
+-- StockCode isn't unique, a product with the same id can have different and prices
+-- Create the dimension table
+SELECT DISTINCT
+    to_hex(md5(cast(coalesce(cast(StockCode as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(Description as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(UnitPrice as string), '_dbt_utils_surrogate_key_null_') as string))) as product_id,
+		StockCode AS stock_code,
+    Description AS description,
+    UnitPrice AS price
+FROM `online-retail-project`.`retail`.`raw_invoices`
+WHERE StockCode IS NOT NULL
+AND UnitPrice > 0
+    );
+  
+[0m15:51:08.954573 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:5b0cc158-53b5-4087-bf62-ff4b764f1712&page=queryresults
+[0m15:51:12.302550 [debug] [Thread-1 (]: Timing info for model.retail.dim_product (execute): 15:51:07.685542 => 15:51:12.302265
+[0m15:51:12.305370 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c47662eb-26f8-4c84-adff-456faa909f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f992c43ea10>]}
+[0m15:51:12.307760 [info ] [Thread-1 (]: 3 of 4 OK created sql table model retail.dim_product ........................... [[32mCREATE TABLE (16.3k rows, 22.6 MiB processed)[0m in 4.66s]
+[0m15:51:12.310086 [debug] [Thread-1 (]: Finished running node model.retail.dim_product
+[0m15:51:12.312974 [debug] [Thread-1 (]: Began running node model.retail.fct_invoices
+[0m15:51:12.315025 [info ] [Thread-1 (]: 4 of 4 START sql table model retail.fct_invoices ............................... [RUN]
+[0m15:51:12.317943 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.dim_product, now model.retail.fct_invoices)
+[0m15:51:12.320738 [debug] [Thread-1 (]: Began compiling node model.retail.fct_invoices
+[0m15:51:12.336347 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.fct_invoices"
+[0m15:51:12.355355 [debug] [Thread-1 (]: Timing info for model.retail.fct_invoices (compile): 15:51:12.322377 => 15:51:12.354720
+[0m15:51:12.357608 [debug] [Thread-1 (]: Began executing node model.retail.fct_invoices
+[0m15:51:12.368665 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.fct_invoices"
+[0m15:51:12.385171 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:51:12.435421 [debug] [Thread-1 (]: On model.retail.fct_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.fct_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`fct_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- fct_invoices.sql
+
+-- Create the fact table by joining the relevant keys from dimension table
+WITH fct_invoices_cte AS (
+    SELECT
+        InvoiceNo AS invoice_id,
+        InvoiceDate AS datetime_id,
+        to_hex(md5(cast(coalesce(cast(StockCode as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(Description as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(UnitPrice as string), '_dbt_utils_surrogate_key_null_') as string))) as product_id,
+        to_hex(md5(cast(coalesce(cast(CustomerID as string), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(Country as string), '_dbt_utils_surrogate_key_null_') as string))) as customer_id,
+        Quantity AS quantity,
+        Quantity * UnitPrice AS total
+    FROM `online-retail-project`.`retail`.`raw_invoices`
+    WHERE Quantity > 0
+)
+SELECT
+    invoice_id,
+    dt.datetime_id,
+    dp.product_id,
+    dc.customer_id,
+    quantity,
+    total
+FROM fct_invoices_cte fi
+INNER JOIN `online-retail-project`.`retail`.`dim_datetime` dt ON fi.datetime_id = dt.datetime_id
+INNER JOIN `online-retail-project`.`retail`.`dim_product` dp ON fi.product_id = dp.product_id
+INNER JOIN `online-retail-project`.`retail`.`dim_customer` dc ON fi.customer_id = dc.customer_id
+    );
+  
+[0m15:51:13.617385 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:f36942b1-2be3-486f-81be-4e8f2751c3f4&page=queryresults
+[0m15:51:18.809885 [debug] [Thread-1 (]: Timing info for model.retail.fct_invoices (execute): 15:51:12.359423 => 15:51:18.809542
+[0m15:51:18.812652 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c47662eb-26f8-4c84-adff-456faa909f35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f992c3ba090>]}
+[0m15:51:18.814939 [info ] [Thread-1 (]: 4 of 4 OK created sql table model retail.fct_invoices .......................... [[32mCREATE TABLE (397.9k rows, 50.6 MiB processed)[0m in 6.50s]
+[0m15:51:18.817789 [debug] [Thread-1 (]: Finished running node model.retail.fct_invoices
+[0m15:51:18.821987 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:51:18.823683 [debug] [MainThread]: Connection 'model.retail.fct_invoices' was properly closed.
+[0m15:51:18.825439 [info ] [MainThread]: 
+[0m15:51:18.827308 [info ] [MainThread]: Finished running 4 table models in 0 hours 0 minutes and 23.31 seconds (23.31s).
+[0m15:51:18.830140 [debug] [MainThread]: Command end result
+[0m15:51:18.868532 [info ] [MainThread]: 
+[0m15:51:18.871003 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:51:18.872878 [info ] [MainThread]: 
+[0m15:51:18.875414 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m15:51:18.879039 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 28.205046, "process_user_time": 5.972999, "process_kernel_time": 1.500703, "process_mem_max_rss": "274612", "process_in_blocks": "264", "process_out_blocks": "0"}
+[0m15:51:18.881792 [debug] [MainThread]: Command `dbt run` succeeded at 15:51:18.881481 after 28.21 seconds
+[0m15:51:18.884068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99649f5c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9964b0d890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9964a5ae90>]}
+[0m15:51:18.886369 [debug] [MainThread]: Flushing usage events
+[0m11:35:04.460165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f755e102190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f755e355110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f755e3d9e10>]}
+
+
+============================== 11:35:04.465847 | 53e1fa56-6386-402a-ade5-b7b1764e12f5 ==============================
+[0m11:35:04.465847 [info ] [MainThread]: Running with dbt=1.7.1
+[0m11:35:04.468038 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_cache_events': 'False', 'debug': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'no_print': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'version_check': 'True', 'partial_parse': 'True', 'quiet': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'indirect_selection': 'eager', 'printer_width': '80', 'log_format': 'default', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'fail_fast': 'False'}
+[0m11:35:05.687644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '53e1fa56-6386-402a-ade5-b7b1764e12f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f755e655850>]}
+[0m11:35:05.781544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '53e1fa56-6386-402a-ade5-b7b1764e12f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f755e106890>]}
+[0m11:35:05.784365 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m11:35:05.830921 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m11:35:07.535736 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 1 files changed.
+[0m11:35:07.537637 [debug] [MainThread]: Partial parsing: added file: retail://models/report/report_product_invoices.sql
+[0m11:35:07.539481 [debug] [MainThread]: Partial parsing: added file: retail://models/report/report_customer_invoices.sql
+[0m11:35:07.541194 [debug] [MainThread]: Partial parsing: added file: retail://models/report/report_year_invoice.sql
+[0m11:35:07.543878 [debug] [MainThread]: Partial parsing: updated file: dbt_bigquery://macros/materializations/table.sql
+[0m11:35:08.084113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '53e1fa56-6386-402a-ade5-b7b1764e12f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7527ea45d0>]}
+[0m11:35:08.127484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '53e1fa56-6386-402a-ade5-b7b1764e12f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7527f3ed10>]}
+[0m11:35:08.129831 [info ] [MainThread]: Found 7 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m11:35:08.132045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53e1fa56-6386-402a-ade5-b7b1764e12f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752c2244d0>]}
+[0m11:35:08.138855 [info ] [MainThread]: 
+[0m11:35:08.141224 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:35:08.144674 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_online-retail-project'
+[0m11:35:08.146793 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:35:09.312069 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-project, now list_online-retail-project_retail)
+[0m11:35:09.313820 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:35:10.193642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53e1fa56-6386-402a-ade5-b7b1764e12f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752c2a2350>]}
+[0m11:35:10.196254 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:35:10.198296 [info ] [MainThread]: 
+[0m11:35:10.208264 [debug] [Thread-1 (]: Began running node model.retail.report_customer_invoices
+[0m11:35:10.210930 [info ] [Thread-1 (]: 1 of 3 START sql table model retail.report_customer_invoices ................... [RUN]
+[0m11:35:10.213934 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-project_retail, now model.retail.report_customer_invoices)
+[0m11:35:10.216595 [debug] [Thread-1 (]: Began compiling node model.retail.report_customer_invoices
+[0m11:35:10.227654 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_customer_invoices"
+[0m11:35:10.254417 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (compile): 11:35:10.218735 => 11:35:10.253683
+[0m11:35:10.257396 [debug] [Thread-1 (]: Began executing node model.retail.report_customer_invoices
+[0m11:35:10.302262 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_customer_invoices"
+[0m11:35:10.326109 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:35:10.368509 [debug] [Thread-1 (]: On model.retail.report_customer_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_customer_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_customer_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW vw_customer_invoice as
+SELECT
+  c.country,
+  c.alpha3Code,
+  COUNT(fi.invoice_id) AS total_invoices,
+  SUM(fi.total) AS total_revenue
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_customer` c ON fi.customer_id = c.customer_id
+GROUP BY c.country, c.alpha3Code
+ORDER BY total_revenue DESC
+LIMIT 10
+    );
+  
+[0m11:35:11.174261 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:9d105714-e596-4372-aa83-4bad21df8854&page=queryresults
+[0m11:35:11.181866 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:35:12.464092 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:4374c6b6-b45e-4904-b2d5-d97323b29bf7&page=queryresults
+[0m11:35:12.466935 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:4374c6b6-b45e-4904-b2d5-d97323b29bf7&page=queryresults
+[0m11:35:12.469405 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (execute): 11:35:10.259058 => 11:35:12.468978
+[0m11:35:12.477479 [debug] [Thread-1 (]: Database Error in model report_customer_invoices (models/report/report_customer_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_customer_invoices.sql
+[0m11:35:12.479630 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '53e1fa56-6386-402a-ade5-b7b1764e12f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f752c136b10>]}
+[0m11:35:12.481551 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model retail.report_customer_invoices .......... [[31mERROR[0m in 2.27s]
+[0m11:35:12.483950 [debug] [Thread-1 (]: Finished running node model.retail.report_customer_invoices
+[0m11:35:12.486171 [debug] [Thread-1 (]: Began running node model.retail.report_product_invoices
+[0m11:35:12.488357 [info ] [Thread-1 (]: 2 of 3 START sql table model retail.report_product_invoices .................... [RUN]
+[0m11:35:12.491907 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_customer_invoices, now model.retail.report_product_invoices)
+[0m11:35:12.494441 [debug] [Thread-1 (]: Began compiling node model.retail.report_product_invoices
+[0m11:35:12.501142 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_product_invoices"
+[0m11:35:12.518464 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (compile): 11:35:12.496449 => 11:35:12.517702
+[0m11:35:12.520673 [debug] [Thread-1 (]: Began executing node model.retail.report_product_invoices
+[0m11:35:12.527646 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_product_invoices"
+[0m11:35:12.543765 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:35:12.585070 [debug] [Thread-1 (]: On model.retail.report_product_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_product_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_product_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW vw_product_invoice as
+SELECT
+  p.product_id,
+  p.stock_code,
+  p.description,
+  SUM(fi.quantity) AS total_quantity_sold
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_product` p ON fi.product_id = p.product_id
+GROUP BY p.product_id, p.stock_code, p.description
+ORDER BY total_quantity_sold DESC
+LIMIT 10
+    );
+  
+[0m11:35:13.573309 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:7714b50b-fb0e-4264-af53-5c4c339bee17&page=queryresults
+[0m11:35:13.576019 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:35:14.163710 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:e48a9888-19f4-4cb8-8692-36fc2514ff8f&page=queryresults
+[0m11:35:14.166830 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:e48a9888-19f4-4cb8-8692-36fc2514ff8f&page=queryresults
+[0m11:35:14.169056 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (execute): 11:35:12.522459 => 11:35:14.168704
+[0m11:35:14.173498 [debug] [Thread-1 (]: Database Error in model report_product_invoices (models/report/report_product_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_product_invoices.sql
+[0m11:35:14.175247 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '53e1fa56-6386-402a-ade5-b7b1764e12f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7525cd2090>]}
+[0m11:35:14.177474 [error] [Thread-1 (]: 2 of 3 ERROR creating sql table model retail.report_product_invoices ........... [[31mERROR[0m in 1.68s]
+[0m11:35:14.180004 [debug] [Thread-1 (]: Finished running node model.retail.report_product_invoices
+[0m11:35:14.182229 [debug] [Thread-1 (]: Began running node model.retail.report_year_invoice
+[0m11:35:14.184787 [info ] [Thread-1 (]: 3 of 3 START sql table model retail.report_year_invoice ........................ [RUN]
+[0m11:35:14.188028 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_product_invoices, now model.retail.report_year_invoice)
+[0m11:35:14.190034 [debug] [Thread-1 (]: Began compiling node model.retail.report_year_invoice
+[0m11:35:14.197581 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_year_invoice"
+[0m11:35:14.216725 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (compile): 11:35:14.192217 => 11:35:14.216079
+[0m11:35:14.219489 [debug] [Thread-1 (]: Began executing node model.retail.report_year_invoice
+[0m11:35:14.226143 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_year_invoice"
+[0m11:35:14.242653 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:35:14.292602 [debug] [Thread-1 (]: On model.retail.report_year_invoice: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_year_invoice"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_year_invoice`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW vw_year_invoice as
+SELECT
+  dt.year,
+  dt.month,
+  COUNT(DISTINCT fi.invoice_id) AS num_invoices,
+  SUM(fi.total) AS total_revenue
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_datetime` dt ON fi.datetime_id = dt.datetime_id
+GROUP BY dt.year, dt.month
+ORDER BY dt.year, dt.month
+    );
+  
+[0m11:35:15.305069 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:8e13e253-acc8-4713-bb20-01858a2e016e&page=queryresults
+[0m11:35:15.308144 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:35:16.409372 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:c7a73140-641a-42c5-96c0-b2aae08eadda&page=queryresults
+[0m11:35:16.412498 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:c7a73140-641a-42c5-96c0-b2aae08eadda&page=queryresults
+[0m11:35:16.414973 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (execute): 11:35:14.221671 => 11:35:16.414480
+[0m11:35:16.419642 [debug] [Thread-1 (]: Database Error in model report_year_invoice (models/report/report_year_invoice.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_year_invoice.sql
+[0m11:35:16.421649 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '53e1fa56-6386-402a-ade5-b7b1764e12f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7527d80dd0>]}
+[0m11:35:16.423775 [error] [Thread-1 (]: 3 of 3 ERROR creating sql table model retail.report_year_invoice ............... [[31mERROR[0m in 2.23s]
+[0m11:35:16.426898 [debug] [Thread-1 (]: Finished running node model.retail.report_year_invoice
+[0m11:35:16.431415 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:35:16.433993 [debug] [MainThread]: Connection 'model.retail.report_year_invoice' was properly closed.
+[0m11:35:16.436838 [info ] [MainThread]: 
+[0m11:35:16.439306 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 8.30 seconds (8.30s).
+[0m11:35:16.442842 [debug] [MainThread]: Command end result
+[0m11:35:16.484695 [info ] [MainThread]: 
+[0m11:35:16.487876 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m11:35:16.491019 [info ] [MainThread]: 
+[0m11:35:16.493593 [error] [MainThread]:   Database Error in model report_customer_invoices (models/report/report_customer_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_customer_invoices.sql
+[0m11:35:16.496092 [info ] [MainThread]: 
+[0m11:35:16.498966 [error] [MainThread]:   Database Error in model report_product_invoices (models/report/report_product_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_product_invoices.sql
+[0m11:35:16.503337 [info ] [MainThread]: 
+[0m11:35:16.505922 [error] [MainThread]:   Database Error in model report_year_invoice (models/report/report_year_invoice.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_year_invoice.sql
+[0m11:35:16.508443 [info ] [MainThread]: 
+[0m11:35:16.511739 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=0 TOTAL=3
+[0m11:35:16.515598 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 12.116508, "process_user_time": 4.595783, "process_kernel_time": 1.422748, "process_mem_max_rss": "277420", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:35:16.519104 [debug] [MainThread]: Command `dbt run` failed at 11:35:16.518648 after 12.12 seconds
+[0m11:35:16.521296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f755e507a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f755e0d6f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f755e354dd0>]}
+[0m11:35:16.523479 [debug] [MainThread]: Flushing usage events
+[0m11:38:54.537820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f087e64ea10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f087faff8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f087ee93250>]}
+
+
+============================== 11:38:54.543525 | f9f3fa7b-cf41-4e1f-b7bb-4a074718d83b ==============================
+[0m11:38:54.543525 [info ] [MainThread]: Running with dbt=1.7.1
+[0m11:38:54.545707 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'cache_selected_only': 'False', 'use_colors': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_path': '/usr/local/airflow/include/dbt/logs', 'debug': 'False', 'write_json': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'version_check': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'printer_width': '80', 'quiet': 'False', 'target_path': 'None'}
+[0m11:38:55.556145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f9f3fa7b-cf41-4e1f-b7bb-4a074718d83b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f084c48f550>]}
+[0m11:38:55.641630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f9f3fa7b-cf41-4e1f-b7bb-4a074718d83b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f087e3eb610>]}
+[0m11:38:55.643883 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m11:38:55.686259 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m11:38:57.360886 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m11:38:57.362458 [debug] [MainThread]: Partial parsing: updated file: retail://models/report/report_customer_invoices.sql
+[0m11:38:57.364290 [debug] [MainThread]: Partial parsing: updated file: retail://models/report/report_year_invoice.sql
+[0m11:38:57.366419 [debug] [MainThread]: Partial parsing: updated file: retail://models/report/report_product_invoices.sql
+[0m11:38:57.684326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f9f3fa7b-cf41-4e1f-b7bb-4a074718d83b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f084c267b90>]}
+[0m11:38:57.735847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f9f3fa7b-cf41-4e1f-b7bb-4a074718d83b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f084c315d10>]}
+[0m11:38:57.738325 [info ] [MainThread]: Found 7 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m11:38:57.740995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f9f3fa7b-cf41-4e1f-b7bb-4a074718d83b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f084c502250>]}
+[0m11:38:57.748558 [info ] [MainThread]: 
+[0m11:38:57.751159 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:38:57.755083 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_online-retail-project'
+[0m11:38:57.757366 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:38:59.074085 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-project, now list_online-retail-project_retail)
+[0m11:38:59.075648 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:38:59.914912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f9f3fa7b-cf41-4e1f-b7bb-4a074718d83b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f084c502350>]}
+[0m11:38:59.916944 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:38:59.918552 [info ] [MainThread]: 
+[0m11:38:59.927307 [debug] [Thread-1 (]: Began running node model.retail.report_customer_invoices
+[0m11:38:59.929346 [info ] [Thread-1 (]: 1 of 3 START sql table model retail.report_customer_invoices ................... [RUN]
+[0m11:38:59.931859 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-project_retail, now model.retail.report_customer_invoices)
+[0m11:38:59.933507 [debug] [Thread-1 (]: Began compiling node model.retail.report_customer_invoices
+[0m11:38:59.944294 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_customer_invoices"
+[0m11:38:59.964029 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (compile): 11:38:59.935100 => 11:38:59.963258
+[0m11:38:59.966415 [debug] [Thread-1 (]: Began executing node model.retail.report_customer_invoices
+[0m11:39:00.012306 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_customer_invoices"
+[0m11:39:00.032900 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:39:00.076692 [debug] [Thread-1 (]: On model.retail.report_customer_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_customer_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_customer_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW vw_customer_invoice as
+(SELECT
+  c.country,
+  c.alpha3Code,
+  COUNT(fi.invoice_id) AS total_invoices,
+  SUM(fi.total) AS total_revenue
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_customer` c ON fi.customer_id = c.customer_id
+GROUP BY c.country, c.alpha3Code
+ORDER BY total_revenue DESC
+LIMIT 10 );
+    );
+  
+[0m11:39:00.957725 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:69e419cd-6a78-4524-8215-66621e55cee0&page=queryresults
+[0m11:39:00.960709 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:39:01.766791 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:9da59d31-b0e0-4e1d-a146-1fbe829f6e58&page=queryresults
+[0m11:39:01.770875 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:9da59d31-b0e0-4e1d-a146-1fbe829f6e58&page=queryresults
+[0m11:39:01.773368 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (execute): 11:38:59.967935 => 11:39:01.772979
+[0m11:39:01.780299 [debug] [Thread-1 (]: Database Error in model report_customer_invoices (models/report/report_customer_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_customer_invoices.sql
+[0m11:39:01.782016 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f9f3fa7b-cf41-4e1f-b7bb-4a074718d83b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f084c2b9e90>]}
+[0m11:39:01.783738 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model retail.report_customer_invoices .......... [[31mERROR[0m in 1.85s]
+[0m11:39:01.786283 [debug] [Thread-1 (]: Finished running node model.retail.report_customer_invoices
+[0m11:39:01.789259 [debug] [Thread-1 (]: Began running node model.retail.report_product_invoices
+[0m11:39:01.791968 [info ] [Thread-1 (]: 2 of 3 START sql table model retail.report_product_invoices .................... [RUN]
+[0m11:39:01.795097 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_customer_invoices, now model.retail.report_product_invoices)
+[0m11:39:01.797818 [debug] [Thread-1 (]: Began compiling node model.retail.report_product_invoices
+[0m11:39:01.806297 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_product_invoices"
+[0m11:39:01.825148 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (compile): 11:39:01.799751 => 11:39:01.824468
+[0m11:39:01.827226 [debug] [Thread-1 (]: Began executing node model.retail.report_product_invoices
+[0m11:39:01.845595 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_product_invoices"
+[0m11:39:01.859287 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:39:01.899122 [debug] [Thread-1 (]: On model.retail.report_product_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_product_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_product_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW vw_product_invoice as
+(SELECT
+  p.product_id,
+  p.stock_code,
+  p.description,
+  SUM(fi.quantity) AS total_quantity_sold
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_product` p ON fi.product_id = p.product_id
+GROUP BY p.product_id, p.stock_code, p.description
+ORDER BY total_quantity_sold DESC
+LIMIT 10);
+    );
+  
+[0m11:39:02.708410 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:9fbdc041-efa1-4db4-8c3f-c689b06f3c2c&page=queryresults
+[0m11:39:02.711029 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:39:03.500070 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:77596f32-1749-469d-a596-8874d64bbc5e&page=queryresults
+[0m11:39:03.502679 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:77596f32-1749-469d-a596-8874d64bbc5e&page=queryresults
+[0m11:39:03.505101 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (execute): 11:39:01.829499 => 11:39:03.504621
+[0m11:39:03.509712 [debug] [Thread-1 (]: Database Error in model report_product_invoices (models/report/report_product_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_product_invoices.sql
+[0m11:39:03.511819 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f9f3fa7b-cf41-4e1f-b7bb-4a074718d83b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f084c085d90>]}
+[0m11:39:03.513940 [error] [Thread-1 (]: 2 of 3 ERROR creating sql table model retail.report_product_invoices ........... [[31mERROR[0m in 1.72s]
+[0m11:39:03.516644 [debug] [Thread-1 (]: Finished running node model.retail.report_product_invoices
+[0m11:39:03.519777 [debug] [Thread-1 (]: Began running node model.retail.report_year_invoice
+[0m11:39:03.521935 [info ] [Thread-1 (]: 3 of 3 START sql table model retail.report_year_invoice ........................ [RUN]
+[0m11:39:03.524616 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_product_invoices, now model.retail.report_year_invoice)
+[0m11:39:03.527037 [debug] [Thread-1 (]: Began compiling node model.retail.report_year_invoice
+[0m11:39:03.532630 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_year_invoice"
+[0m11:39:03.550399 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (compile): 11:39:03.528464 => 11:39:03.549798
+[0m11:39:03.553084 [debug] [Thread-1 (]: Began executing node model.retail.report_year_invoice
+[0m11:39:03.559419 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_year_invoice"
+[0m11:39:03.576038 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:39:03.615397 [debug] [Thread-1 (]: On model.retail.report_year_invoice: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_year_invoice"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_year_invoice`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW vw_year_invoice as
+(SELECT
+  dt.year,
+  dt.month,
+  COUNT(DISTINCT fi.invoice_id) AS num_invoices,
+  SUM(fi.total) AS total_revenue
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_datetime` dt ON fi.datetime_id = dt.datetime_id
+GROUP BY dt.year, dt.month
+ORDER BY dt.year, dt.month);
+    );
+  
+[0m11:39:04.511183 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:d060ecc3-ce70-4e6d-b175-c59283f09733&page=queryresults
+[0m11:39:04.514142 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:39:05.386894 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:ed63aa82-b968-4e89-8551-32d1ad7f5319&page=queryresults
+[0m11:39:05.390038 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:ed63aa82-b968-4e89-8551-32d1ad7f5319&page=queryresults
+[0m11:39:05.392036 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (execute): 11:39:03.555257 => 11:39:05.391698
+[0m11:39:05.396257 [debug] [Thread-1 (]: Database Error in model report_year_invoice (models/report/report_year_invoice.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_year_invoice.sql
+[0m11:39:05.397673 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f9f3fa7b-cf41-4e1f-b7bb-4a074718d83b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f084c0a3e10>]}
+[0m11:39:05.400061 [error] [Thread-1 (]: 3 of 3 ERROR creating sql table model retail.report_year_invoice ............... [[31mERROR[0m in 1.87s]
+[0m11:39:05.402193 [debug] [Thread-1 (]: Finished running node model.retail.report_year_invoice
+[0m11:39:05.406137 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:39:05.408345 [debug] [MainThread]: Connection 'model.retail.report_year_invoice' was properly closed.
+[0m11:39:05.410284 [info ] [MainThread]: 
+[0m11:39:05.412699 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 7.66 seconds (7.66s).
+[0m11:39:05.416243 [debug] [MainThread]: Command end result
+[0m11:39:05.462129 [info ] [MainThread]: 
+[0m11:39:05.468615 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m11:39:05.474520 [info ] [MainThread]: 
+[0m11:39:05.479124 [error] [MainThread]:   Database Error in model report_customer_invoices (models/report/report_customer_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_customer_invoices.sql
+[0m11:39:05.483072 [info ] [MainThread]: 
+[0m11:39:05.486948 [error] [MainThread]:   Database Error in model report_product_invoices (models/report/report_product_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_product_invoices.sql
+[0m11:39:05.492169 [info ] [MainThread]: 
+[0m11:39:05.495747 [error] [MainThread]:   Database Error in model report_year_invoice (models/report/report_year_invoice.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_year_invoice.sql
+[0m11:39:05.498905 [info ] [MainThread]: 
+[0m11:39:05.502339 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=0 TOTAL=3
+[0m11:39:05.506488 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 11.03006, "process_user_time": 4.076164, "process_kernel_time": 1.562529, "process_mem_max_rss": "282200", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:39:05.509994 [debug] [MainThread]: Command `dbt run` failed at 11:39:05.509551 after 11.03 seconds
+[0m11:39:05.513525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f087e3d13d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f087e3bc610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f087e951050>]}
+[0m11:39:05.516735 [debug] [MainThread]: Flushing usage events
+[0m11:41:37.763989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0901ab990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd090701f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0904ece50>]}
+
+
+============================== 11:41:37.769503 | 7da8c8be-bd9f-4e7f-bc1e-27a87c59f749 ==============================
+[0m11:41:37.769503 [info ] [MainThread]: Running with dbt=1.7.1
+[0m11:41:37.771317 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'target_path': 'None', 'fail_fast': 'False', 'static_parser': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'no_print': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'version_check': 'True', 'quiet': 'False', 'warn_error': 'None', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'write_json': 'True'}
+[0m11:41:38.788436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7da8c8be-bd9f-4e7f-bc1e-27a87c59f749', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd05a3b3bd0>]}
+[0m11:41:38.877537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7da8c8be-bd9f-4e7f-bc1e-27a87c59f749', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0901b1f50>]}
+[0m11:41:38.880064 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m11:41:38.923531 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m11:41:40.640709 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m11:41:40.642465 [debug] [MainThread]: Partial parsing: updated file: retail://models/report/report_year_invoice.sql
+[0m11:41:40.644016 [debug] [MainThread]: Partial parsing: updated file: retail://models/report/report_customer_invoices.sql
+[0m11:41:40.645775 [debug] [MainThread]: Partial parsing: updated file: retail://models/report/report_product_invoices.sql
+[0m11:41:40.918604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7da8c8be-bd9f-4e7f-bc1e-27a87c59f749', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd05a140610>]}
+[0m11:41:40.961111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7da8c8be-bd9f-4e7f-bc1e-27a87c59f749', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd05a0b8850>]}
+[0m11:41:40.963189 [info ] [MainThread]: Found 7 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m11:41:40.965212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7da8c8be-bd9f-4e7f-bc1e-27a87c59f749', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd05a165b50>]}
+[0m11:41:40.972556 [info ] [MainThread]: 
+[0m11:41:40.974942 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:41:40.978330 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_online-retail-project'
+[0m11:41:40.980188 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:41:41.972756 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-project, now list_online-retail-project_retail)
+[0m11:41:41.974982 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:41:42.915586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7da8c8be-bd9f-4e7f-bc1e-27a87c59f749', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd090412810>]}
+[0m11:41:42.917540 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:41:42.919127 [info ] [MainThread]: 
+[0m11:41:42.927538 [debug] [Thread-1 (]: Began running node model.retail.report_customer_invoices
+[0m11:41:42.929849 [info ] [Thread-1 (]: 1 of 3 START sql table model retail.report_customer_invoices ................... [RUN]
+[0m11:41:42.932287 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-project_retail, now model.retail.report_customer_invoices)
+[0m11:41:42.933964 [debug] [Thread-1 (]: Began compiling node model.retail.report_customer_invoices
+[0m11:41:42.944327 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_customer_invoices"
+[0m11:41:42.960634 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (compile): 11:41:42.935892 => 11:41:42.960086
+[0m11:41:42.962959 [debug] [Thread-1 (]: Began executing node model.retail.report_customer_invoices
+[0m11:41:43.006437 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_customer_invoices"
+[0m11:41:43.020474 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:41:43.060268 [debug] [Thread-1 (]: On model.retail.report_customer_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_customer_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_customer_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW retail.vw_customer_invoice as
+(SELECT
+  c.country,
+  c.alpha3Code,
+  COUNT(fi.invoice_id) AS total_invoices,
+  SUM(fi.total) AS total_revenue
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_customer` c ON fi.customer_id = c.customer_id
+GROUP BY c.country, c.alpha3Code
+ORDER BY total_revenue DESC
+LIMIT 10 );
+    );
+  
+[0m11:41:43.915151 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:5d5bf313-12bc-48d6-8023-44df624019cf&page=queryresults
+[0m11:41:43.918309 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:41:45.152964 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:8312b298-001f-44b5-96e9-9ff4ffaeb2c3&page=queryresults
+[0m11:41:45.155672 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:8312b298-001f-44b5-96e9-9ff4ffaeb2c3&page=queryresults
+[0m11:41:45.157893 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (execute): 11:41:42.965384 => 11:41:45.157399
+[0m11:41:45.163493 [debug] [Thread-1 (]: Database Error in model report_customer_invoices (models/report/report_customer_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_customer_invoices.sql
+[0m11:41:45.165184 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7da8c8be-bd9f-4e7f-bc1e-27a87c59f749', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd05a13aa50>]}
+[0m11:41:45.166878 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model retail.report_customer_invoices .......... [[31mERROR[0m in 2.23s]
+[0m11:41:45.168685 [debug] [Thread-1 (]: Finished running node model.retail.report_customer_invoices
+[0m11:41:45.170554 [debug] [Thread-1 (]: Began running node model.retail.report_product_invoices
+[0m11:41:45.172361 [info ] [Thread-1 (]: 2 of 3 START sql table model retail.report_product_invoices .................... [RUN]
+[0m11:41:45.174904 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_customer_invoices, now model.retail.report_product_invoices)
+[0m11:41:45.176539 [debug] [Thread-1 (]: Began compiling node model.retail.report_product_invoices
+[0m11:41:45.182175 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_product_invoices"
+[0m11:41:45.199693 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (compile): 11:41:45.178014 => 11:41:45.198978
+[0m11:41:45.201873 [debug] [Thread-1 (]: Began executing node model.retail.report_product_invoices
+[0m11:41:45.217510 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_product_invoices"
+[0m11:41:45.232460 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:41:45.273506 [debug] [Thread-1 (]: On model.retail.report_product_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_product_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_product_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW retail.vw_product_invoice as
+(SELECT
+  p.product_id,
+  p.stock_code,
+  p.description,
+  SUM(fi.quantity) AS total_quantity_sold
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_product` p ON fi.product_id = p.product_id
+GROUP BY p.product_id, p.stock_code, p.description
+ORDER BY total_quantity_sold DESC
+LIMIT 10);
+    );
+  
+[0m11:41:46.182956 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:31ddcc69-b951-4dd2-8cd8-c4f8791d79cf&page=queryresults
+[0m11:41:46.186340 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:41:47.009989 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:09e7babf-46c0-4679-b2d7-87a287ec209c&page=queryresults
+[0m11:41:47.012723 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:09e7babf-46c0-4679-b2d7-87a287ec209c&page=queryresults
+[0m11:41:47.015178 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (execute): 11:41:45.203206 => 11:41:47.014603
+[0m11:41:47.019724 [debug] [Thread-1 (]: Database Error in model report_product_invoices (models/report/report_product_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_product_invoices.sql
+[0m11:41:47.021789 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7da8c8be-bd9f-4e7f-bc1e-27a87c59f749', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd05804ba10>]}
+[0m11:41:47.023704 [error] [Thread-1 (]: 2 of 3 ERROR creating sql table model retail.report_product_invoices ........... [[31mERROR[0m in 1.85s]
+[0m11:41:47.026768 [debug] [Thread-1 (]: Finished running node model.retail.report_product_invoices
+[0m11:41:47.028758 [debug] [Thread-1 (]: Began running node model.retail.report_year_invoice
+[0m11:41:47.030426 [info ] [Thread-1 (]: 3 of 3 START sql table model retail.report_year_invoice ........................ [RUN]
+[0m11:41:47.033141 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_product_invoices, now model.retail.report_year_invoice)
+[0m11:41:47.035711 [debug] [Thread-1 (]: Began compiling node model.retail.report_year_invoice
+[0m11:41:47.041581 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_year_invoice"
+[0m11:41:47.057651 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (compile): 11:41:47.037100 => 11:41:47.057165
+[0m11:41:47.059772 [debug] [Thread-1 (]: Began executing node model.retail.report_year_invoice
+[0m11:41:47.065736 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_year_invoice"
+[0m11:41:47.081190 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:41:47.121336 [debug] [Thread-1 (]: On model.retail.report_year_invoice: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_year_invoice"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_year_invoice`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW retail.vw_year_invoice as
+(SELECT
+  dt.year,
+  dt.month,
+  COUNT(DISTINCT fi.invoice_id) AS num_invoices,
+  SUM(fi.total) AS total_revenue
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_datetime` dt ON fi.datetime_id = dt.datetime_id
+GROUP BY dt.year, dt.month
+ORDER BY dt.year, dt.month);
+    );
+  
+[0m11:41:47.947057 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:63924e9b-30d2-4330-b09e-253d4cdcbf28&page=queryresults
+[0m11:41:47.949966 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:41:48.853121 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:1c4bfcd4-eb6b-4b83-aeb6-ddf846a32c15&page=queryresults
+[0m11:41:48.855791 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:1c4bfcd4-eb6b-4b83-aeb6-ddf846a32c15&page=queryresults
+[0m11:41:48.858076 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (execute): 11:41:47.061858 => 11:41:48.857719
+[0m11:41:48.862222 [debug] [Thread-1 (]: Database Error in model report_year_invoice (models/report/report_year_invoice.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_year_invoice.sql
+[0m11:41:48.863852 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7da8c8be-bd9f-4e7f-bc1e-27a87c59f749', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd05805f050>]}
+[0m11:41:48.865715 [error] [Thread-1 (]: 3 of 3 ERROR creating sql table model retail.report_year_invoice ............... [[31mERROR[0m in 1.83s]
+[0m11:41:48.867761 [debug] [Thread-1 (]: Finished running node model.retail.report_year_invoice
+[0m11:41:48.871306 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:41:48.873363 [debug] [MainThread]: Connection 'model.retail.report_year_invoice' was properly closed.
+[0m11:41:48.875610 [info ] [MainThread]: 
+[0m11:41:48.877573 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 7.90 seconds (7.90s).
+[0m11:41:48.880437 [debug] [MainThread]: Command end result
+[0m11:41:48.915753 [info ] [MainThread]: 
+[0m11:41:48.918181 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m11:41:48.920017 [info ] [MainThread]: 
+[0m11:41:48.922303 [error] [MainThread]:   Database Error in model report_customer_invoices (models/report/report_customer_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_customer_invoices.sql
+[0m11:41:48.924450 [info ] [MainThread]: 
+[0m11:41:48.926653 [error] [MainThread]:   Database Error in model report_product_invoices (models/report/report_product_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_product_invoices.sql
+[0m11:41:48.928851 [info ] [MainThread]: 
+[0m11:41:48.931020 [error] [MainThread]:   Database Error in model report_year_invoice (models/report/report_year_invoice.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_year_invoice.sql
+[0m11:41:48.933401 [info ] [MainThread]: 
+[0m11:41:48.937132 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=0 TOTAL=3
+[0m11:41:48.940004 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 11.238442, "process_user_time": 4.06969, "process_kernel_time": 1.585462, "process_mem_max_rss": "280444", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:41:48.942390 [debug] [MainThread]: Command `dbt run` failed at 11:41:48.942084 after 11.24 seconds
+[0m11:41:48.944576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0905f1f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd090181ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0903a69d0>]}
+[0m11:41:48.946593 [debug] [MainThread]: Flushing usage events
+[0m11:48:16.418564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d27a6ce90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d27a798d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d27d1ab10>]}
+
+
+============================== 11:48:16.425484 | 360c36fc-70cc-42a1-82ba-b4d1175afc73 ==============================
+[0m11:48:16.425484 [info ] [MainThread]: Running with dbt=1.7.1
+[0m11:48:16.428062 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_path': '/usr/local/airflow/include/dbt/logs', 'use_experimental_parser': 'False', 'write_json': 'True', 'fail_fast': 'False', 'printer_width': '80', 'target_path': 'None', 'use_colors': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'log_cache_events': 'False', 'version_check': 'True', 'quiet': 'False', 'static_parser': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'debug': 'False', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'log_format': 'default', 'warn_error': 'None'}
+[0m11:48:17.737639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '360c36fc-70cc-42a1-82ba-b4d1175afc73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d27e710d0>]}
+[0m11:48:17.846905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '360c36fc-70cc-42a1-82ba-b4d1175afc73', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9cfd6d5050>]}
+[0m11:48:17.849585 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m11:48:17.898123 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m11:48:19.805087 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:48:19.807053 [debug] [MainThread]: Partial parsing: updated file: retail://models/report/report_year_invoice.sql
+[0m11:48:20.073599 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.retail.report_year_invoice' (models/report/report_year_invoice.sql) depends on a node named 'retail.fct_invoices' which was not found
+[0m11:48:20.076157 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 3.7308064, "process_user_time": 4.118073, "process_kernel_time": 1.889116, "process_mem_max_rss": "264228", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:48:20.078168 [debug] [MainThread]: Command `dbt run` failed at 11:48:20.077863 after 3.73 seconds
+[0m11:48:20.080019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d2770e510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d277391d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9cf1878050>]}
+[0m11:48:20.081681 [debug] [MainThread]: Flushing usage events
+[0m11:51:03.315641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd17f46ae10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd17f468e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd17fbb57d0>]}
+
+
+============================== 11:51:03.321484 | 61ead41e-de3f-42ad-a925-5ac3d61df32a ==============================
+[0m11:51:03.321484 [info ] [MainThread]: Running with dbt=1.7.1
+[0m11:51:03.323399 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'use_experimental_parser': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'fail_fast': 'False', 'write_json': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'use_colors': 'True', 'introspect': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'indirect_selection': 'eager', 'target_path': 'None', 'no_print': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m11:51:04.387247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '61ead41e-de3f-42ad-a925-5ac3d61df32a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd17f9f9f50>]}
+[0m11:51:04.468705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '61ead41e-de3f-42ad-a925-5ac3d61df32a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd1550822d0>]}
+[0m11:51:04.471083 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m11:51:04.515551 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m11:51:06.350580 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:51:06.352559 [debug] [MainThread]: Partial parsing: updated file: retail://models/report/report_year_invoice.sql
+[0m11:51:06.658797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '61ead41e-de3f-42ad-a925-5ac3d61df32a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd14939d790>]}
+[0m11:51:06.703371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '61ead41e-de3f-42ad-a925-5ac3d61df32a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd14938ba50>]}
+[0m11:51:06.705131 [info ] [MainThread]: Found 7 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m11:51:06.707042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61ead41e-de3f-42ad-a925-5ac3d61df32a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd14959cf90>]}
+[0m11:51:06.713765 [info ] [MainThread]: 
+[0m11:51:06.716073 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:51:06.719174 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_online-retail-project'
+[0m11:51:06.721324 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:51:08.050204 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-project, now list_online-retail-project_retail)
+[0m11:51:08.051774 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:51:08.896353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61ead41e-de3f-42ad-a925-5ac3d61df32a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd14b644e50>]}
+[0m11:51:08.898401 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:51:08.900064 [info ] [MainThread]: 
+[0m11:51:08.908384 [debug] [Thread-1 (]: Began running node model.retail.report_customer_invoices
+[0m11:51:08.910631 [info ] [Thread-1 (]: 1 of 3 START sql table model retail.report_customer_invoices ................... [RUN]
+[0m11:51:08.913134 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-project_retail, now model.retail.report_customer_invoices)
+[0m11:51:08.915334 [debug] [Thread-1 (]: Began compiling node model.retail.report_customer_invoices
+[0m11:51:08.925801 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_customer_invoices"
+[0m11:51:08.943564 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (compile): 11:51:08.917357 => 11:51:08.942798
+[0m11:51:08.945515 [debug] [Thread-1 (]: Began executing node model.retail.report_customer_invoices
+[0m11:51:08.988822 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_customer_invoices"
+[0m11:51:09.003414 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:51:09.047388 [debug] [Thread-1 (]: On model.retail.report_customer_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_customer_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_customer_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW retail.vw_customer_invoice as
+(SELECT
+  c.country,
+  c.alpha3Code,
+  COUNT(fi.invoice_id) AS total_invoices,
+  SUM(fi.total) AS total_revenue
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_customer` c ON fi.customer_id = c.customer_id
+GROUP BY c.country, c.alpha3Code
+ORDER BY total_revenue DESC
+LIMIT 10 );
+    );
+  
+[0m11:51:09.901543 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:c0e6982a-a15f-4f7d-8bcf-afca3bdac43b&page=queryresults
+[0m11:51:09.905079 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:51:10.313330 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:9a0eb160-90ed-438a-8452-57f36015e150&page=queryresults
+[0m11:51:10.316039 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:9a0eb160-90ed-438a-8452-57f36015e150&page=queryresults
+[0m11:51:10.318583 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (execute): 11:51:08.947330 => 11:51:10.318084
+[0m11:51:10.325505 [debug] [Thread-1 (]: Database Error in model report_customer_invoices (models/report/report_customer_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_customer_invoices.sql
+[0m11:51:10.327531 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61ead41e-de3f-42ad-a925-5ac3d61df32a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd1480f0810>]}
+[0m11:51:10.329532 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model retail.report_customer_invoices .......... [[31mERROR[0m in 1.41s]
+[0m11:51:10.332017 [debug] [Thread-1 (]: Finished running node model.retail.report_customer_invoices
+[0m11:51:10.334037 [debug] [Thread-1 (]: Began running node model.retail.report_product_invoices
+[0m11:51:10.335988 [info ] [Thread-1 (]: 2 of 3 START sql table model retail.report_product_invoices .................... [RUN]
+[0m11:51:10.339303 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_customer_invoices, now model.retail.report_product_invoices)
+[0m11:51:10.341775 [debug] [Thread-1 (]: Began compiling node model.retail.report_product_invoices
+[0m11:51:10.348576 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_product_invoices"
+[0m11:51:10.366776 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (compile): 11:51:10.343535 => 11:51:10.366245
+[0m11:51:10.369199 [debug] [Thread-1 (]: Began executing node model.retail.report_product_invoices
+[0m11:51:10.385734 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_product_invoices"
+[0m11:51:10.401954 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:51:10.443160 [debug] [Thread-1 (]: On model.retail.report_product_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_product_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_product_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW retail.vw_product_invoice as
+(SELECT
+  p.product_id,
+  p.stock_code,
+  p.description,
+  SUM(fi.quantity) AS total_quantity_sold
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_product` p ON fi.product_id = p.product_id
+GROUP BY p.product_id, p.stock_code, p.description
+ORDER BY total_quantity_sold DESC
+LIMIT 10);
+    );
+  
+[0m11:51:11.288126 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:dab16df6-9a1e-4b4c-bbd3-dfba7e0abf47&page=queryresults
+[0m11:51:11.291678 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:51:12.351589 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:dc8accd4-8528-4ba0-a49d-ccbbb1532a17&page=queryresults
+[0m11:51:12.354794 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:dc8accd4-8528-4ba0-a49d-ccbbb1532a17&page=queryresults
+[0m11:51:12.356953 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (execute): 11:51:10.371024 => 11:51:12.356506
+[0m11:51:12.361869 [debug] [Thread-1 (]: Database Error in model report_product_invoices (models/report/report_product_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_product_invoices.sql
+[0m11:51:12.363798 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61ead41e-de3f-42ad-a925-5ac3d61df32a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd12efc6210>]}
+[0m11:51:12.365941 [error] [Thread-1 (]: 2 of 3 ERROR creating sql table model retail.report_product_invoices ........... [[31mERROR[0m in 2.03s]
+[0m11:51:12.368443 [debug] [Thread-1 (]: Finished running node model.retail.report_product_invoices
+[0m11:51:12.370526 [debug] [Thread-1 (]: Began running node model.retail.report_year_invoice
+[0m11:51:12.372433 [info ] [Thread-1 (]: 3 of 3 START sql table model retail.report_year_invoice ........................ [RUN]
+[0m11:51:12.375551 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_product_invoices, now model.retail.report_year_invoice)
+[0m11:51:12.377602 [debug] [Thread-1 (]: Began compiling node model.retail.report_year_invoice
+[0m11:51:12.383613 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_year_invoice"
+[0m11:51:12.403061 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (compile): 11:51:12.379067 => 11:51:12.402552
+[0m11:51:12.405309 [debug] [Thread-1 (]: Began executing node model.retail.report_year_invoice
+[0m11:51:12.411218 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_year_invoice"
+[0m11:51:12.426253 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:51:12.465399 [debug] [Thread-1 (]: On model.retail.report_year_invoice: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_year_invoice"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_year_invoice`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/retail_vw_year_invoice.sql
+WITH invoice_data AS (
+  SELECT
+    dt.year,
+    dt.month,
+    fi.invoice_id,
+    fi.total
+  FROM `online-retail-project`.`retail`.`fct_invoices` fi
+  JOIN `online-retail-project`.`retail`.`dim_datetime` dt ON fi.datetime_id = dt.datetime_id
+)
+
+SELECT
+  year,
+  month,
+  COUNT(DISTINCT invoice_id) AS num_invoices,
+  SUM(total) AS total_revenue
+FROM invoice_data
+GROUP BY year, month
+ORDER BY year, month;
+    );
+  
+[0m11:51:13.470930 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:1c96acc8-4086-4514-b639-3efa8a7c2462&page=queryresults
+[0m11:51:13.473770 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected ")" but got ";" at [31:21]')
+[0m11:51:14.111729 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:7da4689f-b464-4f90-8864-80fa04e2942c&page=queryresults
+[0m11:51:14.115273 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:7da4689f-b464-4f90-8864-80fa04e2942c&page=queryresults
+[0m11:51:14.117529 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (execute): 11:51:12.406777 => 11:51:14.117132
+[0m11:51:14.122845 [debug] [Thread-1 (]: Database Error in model report_year_invoice (models/report/report_year_invoice.sql)
+  Syntax error: Expected ")" but got ";" at [31:21]
+  compiled Code at target/run/retail/models/report/report_year_invoice.sql
+[0m11:51:14.124598 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61ead41e-de3f-42ad-a925-5ac3d61df32a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd14816e210>]}
+[0m11:51:14.126607 [error] [Thread-1 (]: 3 of 3 ERROR creating sql table model retail.report_year_invoice ............... [[31mERROR[0m in 1.75s]
+[0m11:51:14.129121 [debug] [Thread-1 (]: Finished running node model.retail.report_year_invoice
+[0m11:51:14.133538 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:51:14.134986 [debug] [MainThread]: Connection 'model.retail.report_year_invoice' was properly closed.
+[0m11:51:14.136650 [info ] [MainThread]: 
+[0m11:51:14.139022 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 7.42 seconds (7.42s).
+[0m11:51:14.142124 [debug] [MainThread]: Command end result
+[0m11:51:14.176186 [info ] [MainThread]: 
+[0m11:51:14.179254 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m11:51:14.182657 [info ] [MainThread]: 
+[0m11:51:14.185620 [error] [MainThread]:   Database Error in model report_customer_invoices (models/report/report_customer_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_customer_invoices.sql
+[0m11:51:14.188586 [info ] [MainThread]: 
+[0m11:51:14.191414 [error] [MainThread]:   Database Error in model report_product_invoices (models/report/report_product_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_product_invoices.sql
+[0m11:51:14.194793 [info ] [MainThread]: 
+[0m11:51:14.197801 [error] [MainThread]:   Database Error in model report_year_invoice (models/report/report_year_invoice.sql)
+  Syntax error: Expected ")" but got ";" at [31:21]
+  compiled Code at target/run/retail/models/report/report_year_invoice.sql
+[0m11:51:14.203493 [info ] [MainThread]: 
+[0m11:51:14.210050 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=0 TOTAL=3
+[0m11:51:14.213470 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 10.959667, "process_user_time": 4.24957, "process_kernel_time": 1.497467, "process_mem_max_rss": "282908", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:51:14.216182 [debug] [MainThread]: Command `dbt run` failed at 11:51:14.215872 after 10.96 seconds
+[0m11:51:14.218234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd17f9d3350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd17f9fb810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd17f8bb750>]}
+[0m11:51:14.220071 [debug] [MainThread]: Flushing usage events
+[0m11:51:35.070487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff84c3cbe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff84f4e3a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff84c62cc50>]}
+
+
+============================== 11:51:35.076106 | 858f5507-9082-43de-b1a4-f943b8c18bdb ==============================
+[0m11:51:35.076106 [info ] [MainThread]: Running with dbt=1.7.1
+[0m11:51:35.078070 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'printer_width': '80', 'indirect_selection': 'eager', 'version_check': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'introspect': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'log_format': 'default', 'warn_error': 'None', 'target_path': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'debug': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'quiet': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:51:36.096162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '858f5507-9082-43de-b1a4-f943b8c18bdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff816169bd0>]}
+[0m11:51:36.179638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '858f5507-9082-43de-b1a4-f943b8c18bdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff84bf96dd0>]}
+[0m11:51:36.181795 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m11:51:36.224851 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m11:51:37.849977 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:51:37.851894 [debug] [MainThread]: Partial parsing: updated file: retail://models/report/report_year_invoice.sql
+[0m11:51:38.104625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '858f5507-9082-43de-b1a4-f943b8c18bdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff815fd2550>]}
+[0m11:51:38.144697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '858f5507-9082-43de-b1a4-f943b8c18bdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff815cbe850>]}
+[0m11:51:38.146614 [info ] [MainThread]: Found 7 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m11:51:38.148403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '858f5507-9082-43de-b1a4-f943b8c18bdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff816094d90>]}
+[0m11:51:38.154795 [info ] [MainThread]: 
+[0m11:51:38.157264 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:51:38.160408 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_online-retail-project'
+[0m11:51:38.162091 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:51:39.076487 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-project, now list_online-retail-project_retail)
+[0m11:51:39.078303 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:51:40.041800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '858f5507-9082-43de-b1a4-f943b8c18bdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff816094d90>]}
+[0m11:51:40.044318 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:51:40.045943 [info ] [MainThread]: 
+[0m11:51:40.055191 [debug] [Thread-1 (]: Began running node model.retail.report_customer_invoices
+[0m11:51:40.057308 [info ] [Thread-1 (]: 1 of 3 START sql table model retail.report_customer_invoices ................... [RUN]
+[0m11:51:40.059636 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-project_retail, now model.retail.report_customer_invoices)
+[0m11:51:40.062013 [debug] [Thread-1 (]: Began compiling node model.retail.report_customer_invoices
+[0m11:51:40.072257 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_customer_invoices"
+[0m11:51:40.088479 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (compile): 11:51:40.063669 => 11:51:40.087760
+[0m11:51:40.091465 [debug] [Thread-1 (]: Began executing node model.retail.report_customer_invoices
+[0m11:51:40.137969 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_customer_invoices"
+[0m11:51:40.151693 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:51:40.189788 [debug] [Thread-1 (]: On model.retail.report_customer_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_customer_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_customer_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW retail.vw_customer_invoice as
+(SELECT
+  c.country,
+  c.alpha3Code,
+  COUNT(fi.invoice_id) AS total_invoices,
+  SUM(fi.total) AS total_revenue
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_customer` c ON fi.customer_id = c.customer_id
+GROUP BY c.country, c.alpha3Code
+ORDER BY total_revenue DESC
+LIMIT 10 );
+    );
+  
+[0m11:51:41.090160 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:3dd76cc1-2476-4822-a017-470d1deac0f2&page=queryresults
+[0m11:51:41.093404 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:51:41.867905 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:51763141-5754-4c9c-959b-af0c465c582d&page=queryresults
+[0m11:51:41.928400 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:51763141-5754-4c9c-959b-af0c465c582d&page=queryresults
+[0m11:51:41.931067 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (execute): 11:51:40.093764 => 11:51:41.930588
+[0m11:51:41.937792 [debug] [Thread-1 (]: Database Error in model report_customer_invoices (models/report/report_customer_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_customer_invoices.sql
+[0m11:51:41.939754 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '858f5507-9082-43de-b1a4-f943b8c18bdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff815c2a1d0>]}
+[0m11:51:41.942299 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model retail.report_customer_invoices .......... [[31mERROR[0m in 1.88s]
+[0m11:51:41.945064 [debug] [Thread-1 (]: Finished running node model.retail.report_customer_invoices
+[0m11:51:41.948261 [debug] [Thread-1 (]: Began running node model.retail.report_product_invoices
+[0m11:51:41.951741 [info ] [Thread-1 (]: 2 of 3 START sql table model retail.report_product_invoices .................... [RUN]
+[0m11:51:41.955240 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_customer_invoices, now model.retail.report_product_invoices)
+[0m11:51:41.958160 [debug] [Thread-1 (]: Began compiling node model.retail.report_product_invoices
+[0m11:51:41.965423 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_product_invoices"
+[0m11:51:41.981711 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (compile): 11:51:41.960433 => 11:51:41.981069
+[0m11:51:41.983537 [debug] [Thread-1 (]: Began executing node model.retail.report_product_invoices
+[0m11:51:41.999615 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_product_invoices"
+[0m11:51:42.014482 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:51:42.052941 [debug] [Thread-1 (]: On model.retail.report_product_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_product_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_product_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW retail.vw_product_invoice as
+(SELECT
+  p.product_id,
+  p.stock_code,
+  p.description,
+  SUM(fi.quantity) AS total_quantity_sold
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_product` p ON fi.product_id = p.product_id
+GROUP BY p.product_id, p.stock_code, p.description
+ORDER BY total_quantity_sold DESC
+LIMIT 10);
+    );
+  
+[0m11:51:42.918648 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:f71f5698-bb07-44aa-ba01-a3ba4287d4a9&page=queryresults
+[0m11:51:42.921521 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:51:44.285039 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:0709cd40-dff0-4e56-8e62-c90e6a46a930&page=queryresults
+[0m11:51:44.287631 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:0709cd40-dff0-4e56-8e62-c90e6a46a930&page=queryresults
+[0m11:51:44.290069 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (execute): 11:51:41.985255 => 11:51:44.289504
+[0m11:51:44.294566 [debug] [Thread-1 (]: Database Error in model report_product_invoices (models/report/report_product_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_product_invoices.sql
+[0m11:51:44.296415 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '858f5507-9082-43de-b1a4-f943b8c18bdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff815cb0e10>]}
+[0m11:51:44.298608 [error] [Thread-1 (]: 2 of 3 ERROR creating sql table model retail.report_product_invoices ........... [[31mERROR[0m in 2.34s]
+[0m11:51:44.301318 [debug] [Thread-1 (]: Finished running node model.retail.report_product_invoices
+[0m11:51:44.303559 [debug] [Thread-1 (]: Began running node model.retail.report_year_invoice
+[0m11:51:44.306104 [info ] [Thread-1 (]: 3 of 3 START sql table model retail.report_year_invoice ........................ [RUN]
+[0m11:51:44.309024 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_product_invoices, now model.retail.report_year_invoice)
+[0m11:51:44.311506 [debug] [Thread-1 (]: Began compiling node model.retail.report_year_invoice
+[0m11:51:44.319260 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_year_invoice"
+[0m11:51:44.337997 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (compile): 11:51:44.313910 => 11:51:44.337375
+[0m11:51:44.340621 [debug] [Thread-1 (]: Began executing node model.retail.report_year_invoice
+[0m11:51:44.347165 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_year_invoice"
+[0m11:51:44.362705 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:51:44.402175 [debug] [Thread-1 (]: On model.retail.report_year_invoice: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_year_invoice"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_year_invoice`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/retail_vw_year_invoice.sql
+WITH invoice_data AS (
+  SELECT
+    dt.year,
+    dt.month,
+    fi.invoice_id,
+    fi.total
+  FROM `online-retail-project`.`retail`.`fct_invoices` fi
+  JOIN `online-retail-project`.`retail`.`dim_datetime` dt ON fi.datetime_id = dt.datetime_id
+)
+
+SELECT
+  year,
+  month,
+  COUNT(DISTINCT invoice_id) AS num_invoices,
+  SUM(total) AS total_revenue
+FROM invoice_data
+GROUP BY year, month
+ORDER BY year, month
+    );
+  
+[0m11:51:45.550698 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:f99a99a0-147e-4c6c-b5f6-7f371bb4df9d&page=queryresults
+[0m11:51:48.962961 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (execute): 11:51:44.342595 => 11:51:48.962660
+[0m11:51:48.964833 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '858f5507-9082-43de-b1a4-f943b8c18bdb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff815c5c350>]}
+[0m11:51:48.966515 [info ] [Thread-1 (]: 3 of 3 OK created sql table model retail.report_year_invoice ................... [[32mCREATE TABLE (13.0 rows, 12.4 MiB processed)[0m in 4.66s]
+[0m11:51:48.968723 [debug] [Thread-1 (]: Finished running node model.retail.report_year_invoice
+[0m11:51:48.972629 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:51:48.974145 [debug] [MainThread]: Connection 'model.retail.report_year_invoice' was properly closed.
+[0m11:51:48.975809 [info ] [MainThread]: 
+[0m11:51:48.977512 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 10.82 seconds (10.82s).
+[0m11:51:48.980339 [debug] [MainThread]: Command end result
+[0m11:51:49.016537 [info ] [MainThread]: 
+[0m11:51:49.019150 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m11:51:49.021783 [info ] [MainThread]: 
+[0m11:51:49.023640 [error] [MainThread]:   Database Error in model report_customer_invoices (models/report/report_customer_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_customer_invoices.sql
+[0m11:51:49.025378 [info ] [MainThread]: 
+[0m11:51:49.027312 [error] [MainThread]:   Database Error in model report_product_invoices (models/report/report_product_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_product_invoices.sql
+[0m11:51:49.029447 [info ] [MainThread]: 
+[0m11:51:49.031724 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=2 SKIP=0 TOTAL=3
+[0m11:51:49.035212 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 14.027582, "process_user_time": 4.020546, "process_kernel_time": 1.592295, "process_mem_max_rss": "281112", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:51:49.037295 [debug] [MainThread]: Command `dbt run` failed at 11:51:49.037079 after 14.03 seconds
+[0m11:51:49.039149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff84c263d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff84c58fa90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff84c2b3c50>]}
+[0m11:51:49.041623 [debug] [MainThread]: Flushing usage events
+[0m11:54:03.215019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa53fff9ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa540550750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa540134050>]}
+
+
+============================== 11:54:03.221063 | 2a74c253-bbf5-475e-8e91-c584b34b6c27 ==============================
+[0m11:54:03.221063 [info ] [MainThread]: Running with dbt=1.7.1
+[0m11:54:03.223250 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'use_colors': 'True', 'warn_error': 'None', 'no_print': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'quiet': 'False', 'write_json': 'True', 'static_parser': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'partial_parse': 'True', 'log_format': 'default'}
+[0m11:54:04.319931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2a74c253-bbf5-475e-8e91-c584b34b6c27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa50a04f890>]}
+[0m11:54:04.416154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2a74c253-bbf5-475e-8e91-c584b34b6c27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa53fe1a9d0>]}
+[0m11:54:04.418463 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m11:54:04.467014 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m11:54:06.211852 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:54:06.213501 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:54:06.222715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2a74c253-bbf5-475e-8e91-c584b34b6c27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa509f1e350>]}
+[0m11:54:06.266907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2a74c253-bbf5-475e-8e91-c584b34b6c27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa50a0e9450>]}
+[0m11:54:06.269255 [info ] [MainThread]: Found 7 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m11:54:06.271236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2a74c253-bbf5-475e-8e91-c584b34b6c27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa50a22a750>]}
+[0m11:54:06.278503 [info ] [MainThread]: 
+[0m11:54:06.280974 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:54:06.284525 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_online-retail-project'
+[0m11:54:06.286872 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:54:07.356472 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-project, now list_online-retail-project_retail)
+[0m11:54:07.358343 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:54:08.344003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2a74c253-bbf5-475e-8e91-c584b34b6c27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa54407cc10>]}
+[0m11:54:08.346340 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:54:08.348061 [info ] [MainThread]: 
+[0m11:54:08.357083 [debug] [Thread-1 (]: Began running node model.retail.report_customer_invoices
+[0m11:54:08.359018 [info ] [Thread-1 (]: 1 of 3 START sql table model retail.report_customer_invoices ................... [RUN]
+[0m11:54:08.361237 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-project_retail, now model.retail.report_customer_invoices)
+[0m11:54:08.363065 [debug] [Thread-1 (]: Began compiling node model.retail.report_customer_invoices
+[0m11:54:08.373304 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_customer_invoices"
+[0m11:54:08.392077 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (compile): 11:54:08.364934 => 11:54:08.391538
+[0m11:54:08.394319 [debug] [Thread-1 (]: Began executing node model.retail.report_customer_invoices
+[0m11:54:08.437109 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_customer_invoices"
+[0m11:54:08.450818 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:54:08.488434 [debug] [Thread-1 (]: On model.retail.report_customer_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_customer_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_customer_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW retail.vw_customer_invoice as
+(SELECT
+  c.country,
+  c.alpha3Code,
+  COUNT(fi.invoice_id) AS total_invoices,
+  SUM(fi.total) AS total_revenue
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_customer` c ON fi.customer_id = c.customer_id
+GROUP BY c.country, c.alpha3Code
+ORDER BY total_revenue DESC
+LIMIT 10 );
+    );
+  
+[0m11:54:09.338721 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:386b7c0b-f52b-4742-9fe5-6d8693e6b8bf&page=queryresults
+[0m11:54:09.341974 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:54:10.322151 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:fd31eb49-7e53-4cd9-a6c6-a5c628dc51ea&page=queryresults
+[0m11:54:10.325069 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:fd31eb49-7e53-4cd9-a6c6-a5c628dc51ea&page=queryresults
+[0m11:54:10.327451 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (execute): 11:54:08.396188 => 11:54:10.327127
+[0m11:54:10.333607 [debug] [Thread-1 (]: Database Error in model report_customer_invoices (models/report/report_customer_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_customer_invoices.sql
+[0m11:54:10.335773 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2a74c253-bbf5-475e-8e91-c584b34b6c27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa509fe14d0>]}
+[0m11:54:10.337892 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model retail.report_customer_invoices .......... [[31mERROR[0m in 1.97s]
+[0m11:54:10.340919 [debug] [Thread-1 (]: Finished running node model.retail.report_customer_invoices
+[0m11:54:10.343508 [debug] [Thread-1 (]: Began running node model.retail.report_product_invoices
+[0m11:54:10.345718 [info ] [Thread-1 (]: 2 of 3 START sql table model retail.report_product_invoices .................... [RUN]
+[0m11:54:10.349006 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_customer_invoices, now model.retail.report_product_invoices)
+[0m11:54:10.350853 [debug] [Thread-1 (]: Began compiling node model.retail.report_product_invoices
+[0m11:54:10.357029 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_product_invoices"
+[0m11:54:10.376014 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (compile): 11:54:10.352428 => 11:54:10.375179
+[0m11:54:10.378856 [debug] [Thread-1 (]: Began executing node model.retail.report_product_invoices
+[0m11:54:10.384727 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_product_invoices"
+[0m11:54:10.400814 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:54:10.445234 [debug] [Thread-1 (]: On model.retail.report_product_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_product_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_product_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      CREATE VIEW retail.vw_product_invoice as
+(SELECT
+  p.product_id,
+  p.stock_code,
+  p.description,
+  SUM(fi.quantity) AS total_quantity_sold
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_product` p ON fi.product_id = p.product_id
+GROUP BY p.product_id, p.stock_code, p.description
+ORDER BY total_quantity_sold DESC
+LIMIT 10);
+    );
+  
+[0m11:54:11.245830 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:34f0c270-1104-41a7-9c8f-d994d8eb1f1c&page=queryresults
+[0m11:54:11.248493 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected keyword CREATE at [13:7]')
+[0m11:54:12.296735 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:2204a362-c960-435c-b887-883f0b6f4a2d&page=queryresults
+[0m11:54:12.299624 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:2204a362-c960-435c-b887-883f0b6f4a2d&page=queryresults
+[0m11:54:12.301702 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (execute): 11:54:10.380565 => 11:54:12.301375
+[0m11:54:12.305831 [debug] [Thread-1 (]: Database Error in model report_product_invoices (models/report/report_product_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_product_invoices.sql
+[0m11:54:12.307542 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2a74c253-bbf5-475e-8e91-c584b34b6c27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa509e0b6d0>]}
+[0m11:54:12.309442 [error] [Thread-1 (]: 2 of 3 ERROR creating sql table model retail.report_product_invoices ........... [[31mERROR[0m in 1.96s]
+[0m11:54:12.311859 [debug] [Thread-1 (]: Finished running node model.retail.report_product_invoices
+[0m11:54:12.313690 [debug] [Thread-1 (]: Began running node model.retail.report_year_invoice
+[0m11:54:12.315811 [info ] [Thread-1 (]: 3 of 3 START sql table model retail.report_year_invoice ........................ [RUN]
+[0m11:54:12.318938 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_product_invoices, now model.retail.report_year_invoice)
+[0m11:54:12.321490 [debug] [Thread-1 (]: Began compiling node model.retail.report_year_invoice
+[0m11:54:12.327199 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_year_invoice"
+[0m11:54:12.344011 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (compile): 11:54:12.323010 => 11:54:12.343411
+[0m11:54:12.346035 [debug] [Thread-1 (]: Began executing node model.retail.report_year_invoice
+[0m11:54:12.351728 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_year_invoice"
+[0m11:54:12.368107 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:54:12.407291 [debug] [Thread-1 (]: On model.retail.report_year_invoice: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_year_invoice"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_year_invoice`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- models/retail_vw_year_invoice.sql
+WITH invoice_data AS (
+  SELECT
+    dt.year,
+    dt.month,
+    fi.invoice_id,
+    fi.total
+  FROM `online-retail-project`.`retail`.`fct_invoices` fi
+  JOIN `online-retail-project`.`retail`.`dim_datetime` dt ON fi.datetime_id = dt.datetime_id
+)
+
+SELECT
+  year,
+  month,
+  COUNT(DISTINCT invoice_id) AS num_invoices,
+  SUM(total) AS total_revenue
+FROM invoice_data
+GROUP BY year, month
+ORDER BY year, month
+    );
+  
+[0m11:54:13.542220 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:088c7aa7-6b1b-4035-9004-08660c530182&page=queryresults
+[0m11:54:17.014002 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (execute): 11:54:12.347918 => 11:54:17.013682
+[0m11:54:17.015947 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2a74c253-bbf5-475e-8e91-c584b34b6c27', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa509d4d4d0>]}
+[0m11:54:17.017795 [info ] [Thread-1 (]: 3 of 3 OK created sql table model retail.report_year_invoice ................... [[32mCREATE TABLE (13.0 rows, 12.4 MiB processed)[0m in 4.70s]
+[0m11:54:17.019773 [debug] [Thread-1 (]: Finished running node model.retail.report_year_invoice
+[0m11:54:17.023307 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:54:17.024890 [debug] [MainThread]: Connection 'model.retail.report_year_invoice' was properly closed.
+[0m11:54:17.026619 [info ] [MainThread]: 
+[0m11:54:17.028411 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 10.75 seconds (10.75s).
+[0m11:54:17.030910 [debug] [MainThread]: Command end result
+[0m11:54:17.066155 [info ] [MainThread]: 
+[0m11:54:17.069171 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m11:54:17.073926 [info ] [MainThread]: 
+[0m11:54:17.076671 [error] [MainThread]:   Database Error in model report_customer_invoices (models/report/report_customer_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_customer_invoices.sql
+[0m11:54:17.078906 [info ] [MainThread]: 
+[0m11:54:17.080473 [error] [MainThread]:   Database Error in model report_product_invoices (models/report/report_product_invoices.sql)
+  Syntax error: Unexpected keyword CREATE at [13:7]
+  compiled Code at target/run/retail/models/report/report_product_invoices.sql
+[0m11:54:17.082352 [info ] [MainThread]: 
+[0m11:54:17.084466 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=2 SKIP=0 TOTAL=3
+[0m11:54:17.087001 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 13.933785, "process_user_time": 4.17708, "process_kernel_time": 1.567694, "process_mem_max_rss": "279428", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:54:17.089308 [debug] [MainThread]: Command `dbt run` failed at 11:54:17.089042 after 13.94 seconds
+[0m11:54:17.091046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5412d3c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa53ffd2410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5453434d0>]}
+[0m11:54:17.092893 [debug] [MainThread]: Flushing usage events
+[0m11:56:24.635838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99b7b24610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99b80d3150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99b80c14d0>]}
+
+
+============================== 11:56:24.642552 | 8f2aeb48-792c-4bed-9d36-92c26ad18088 ==============================
+[0m11:56:24.642552 [info ] [MainThread]: Running with dbt=1.7.1
+[0m11:56:24.644682 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'write_json': 'True', 'use_colors': 'True', 'static_parser': 'True', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'invocation_command': 'dbt run --select path:models/report --profiles-dir /usr/local/airflow/include/dbt/', 'use_experimental_parser': 'False', 'target_path': 'None', 'log_format': 'default', 'warn_error': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'cache_selected_only': 'False', 'quiet': 'False', 'debug': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'fail_fast': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'printer_width': '80', 'indirect_selection': 'eager', 'version_check': 'True'}
+[0m11:56:25.669005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8f2aeb48-792c-4bed-9d36-92c26ad18088', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9981d87550>]}
+[0m11:56:25.751749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8f2aeb48-792c-4bed-9d36-92c26ad18088', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99b7b42bd0>]}
+[0m11:56:25.754415 [info ] [MainThread]: Registered adapter: bigquery=1.7.2
+[0m11:56:25.796906 [debug] [MainThread]: checksum: ad428e6dc3b353dcb23d0c4ebea8b20b180e94b873271ac2a054a8e446dac0e2, vars: {}, profile: , target: , version: 1.7.1
+[0m11:56:27.470041 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m11:56:27.471737 [debug] [MainThread]: Partial parsing: updated file: retail://models/report/report_customer_invoices.sql
+[0m11:56:27.473162 [debug] [MainThread]: Partial parsing: updated file: retail://models/report/report_product_invoices.sql
+[0m11:56:27.474713 [debug] [MainThread]: Partial parsing: updated file: retail://models/report/report_year_invoice.sql
+[0m11:56:27.745165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8f2aeb48-792c-4bed-9d36-92c26ad18088', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9981b13c50>]}
+[0m11:56:27.793336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8f2aeb48-792c-4bed-9d36-92c26ad18088', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99819ef310>]}
+[0m11:56:27.795621 [info ] [MainThread]: Found 7 models, 2 sources, 0 exposures, 0 metrics, 561 macros, 0 groups, 0 semantic models
+[0m11:56:27.798279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8f2aeb48-792c-4bed-9d36-92c26ad18088', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9981bac050>]}
+[0m11:56:27.805908 [info ] [MainThread]: 
+[0m11:56:27.808723 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:56:27.812452 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_online-retail-project'
+[0m11:56:27.815001 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:56:28.921389 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_online-retail-project, now list_online-retail-project_retail)
+[0m11:56:28.922925 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:56:29.808644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8f2aeb48-792c-4bed-9d36-92c26ad18088', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9981aedc50>]}
+[0m11:56:29.810869 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:56:29.812740 [info ] [MainThread]: 
+[0m11:56:29.822101 [debug] [Thread-1 (]: Began running node model.retail.report_customer_invoices
+[0m11:56:29.824393 [info ] [Thread-1 (]: 1 of 3 START sql table model retail.report_customer_invoices ................... [RUN]
+[0m11:56:29.827587 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_online-retail-project_retail, now model.retail.report_customer_invoices)
+[0m11:56:29.829896 [debug] [Thread-1 (]: Began compiling node model.retail.report_customer_invoices
+[0m11:56:29.840727 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_customer_invoices"
+[0m11:56:29.859411 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (compile): 11:56:29.831700 => 11:56:29.858765
+[0m11:56:29.862509 [debug] [Thread-1 (]: Began executing node model.retail.report_customer_invoices
+[0m11:56:29.909133 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_customer_invoices"
+[0m11:56:29.923383 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:56:29.961565 [debug] [Thread-1 (]: On model.retail.report_customer_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_customer_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_customer_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+  c.country,
+  c.alpha3Code,
+  COUNT(fi.invoice_id) AS total_invoices,
+  SUM(fi.total) AS total_revenue
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_customer` c ON fi.customer_id = c.customer_id
+GROUP BY c.country, c.alpha3Code
+ORDER BY total_revenue DESC
+LIMIT 10
+    );
+  
+[0m11:56:31.246881 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:36f1a6e1-3b42-4c9f-ac5f-f42c9baacd16&page=queryresults
+[0m11:56:34.080403 [debug] [Thread-1 (]: Timing info for model.retail.report_customer_invoices (execute): 11:56:29.864906 => 11:56:34.080037
+[0m11:56:34.082650 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f2aeb48-792c-4bed-9d36-92c26ad18088', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9981a0d910>]}
+[0m11:56:34.084795 [info ] [Thread-1 (]: 1 of 3 OK created sql table model retail.report_customer_invoices .............. [[32mCREATE TABLE (10.0 rows, 19.2 MiB processed)[0m in 4.26s]
+[0m11:56:34.087314 [debug] [Thread-1 (]: Finished running node model.retail.report_customer_invoices
+[0m11:56:34.089400 [debug] [Thread-1 (]: Began running node model.retail.report_product_invoices
+[0m11:56:34.091136 [info ] [Thread-1 (]: 2 of 3 START sql table model retail.report_product_invoices .................... [RUN]
+[0m11:56:34.093462 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_customer_invoices, now model.retail.report_product_invoices)
+[0m11:56:34.096126 [debug] [Thread-1 (]: Began compiling node model.retail.report_product_invoices
+[0m11:56:34.112079 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_product_invoices"
+[0m11:56:34.129702 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (compile): 11:56:34.098776 => 11:56:34.129194
+[0m11:56:34.132095 [debug] [Thread-1 (]: Began executing node model.retail.report_product_invoices
+[0m11:56:34.138819 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_product_invoices"
+[0m11:56:34.155942 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:56:34.200090 [debug] [Thread-1 (]: On model.retail.report_product_invoices: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_product_invoices"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_product_invoices`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+  p.product_id,
+  p.stock_code,
+  p.description,
+  SUM(fi.quantity) AS total_quantity_sold
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_product` p ON fi.product_id = p.product_id
+GROUP BY p.product_id, p.stock_code, p.description
+ORDER BY total_quantity_sold DESC
+LIMIT 10
+    );
+  
+[0m11:56:35.339820 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:5c206d49-2c9e-477e-abde-e62d66ed87b1&page=queryresults
+[0m11:56:38.658987 [debug] [Thread-1 (]: Timing info for model.retail.report_product_invoices (execute): 11:56:34.133940 => 11:56:38.658644
+[0m11:56:38.661062 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f2aeb48-792c-4bed-9d36-92c26ad18088', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99818f3d50>]}
+[0m11:56:38.662941 [info ] [Thread-1 (]: 2 of 3 OK created sql table model retail.report_product_invoices ............... [[32mCREATE TABLE (10.0 rows, 17.0 MiB processed)[0m in 4.57s]
+[0m11:56:38.664924 [debug] [Thread-1 (]: Finished running node model.retail.report_product_invoices
+[0m11:56:38.667105 [debug] [Thread-1 (]: Began running node model.retail.report_year_invoice
+[0m11:56:38.668911 [info ] [Thread-1 (]: 3 of 3 START sql table model retail.report_year_invoice ........................ [RUN]
+[0m11:56:38.671029 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail.report_product_invoices, now model.retail.report_year_invoice)
+[0m11:56:38.673026 [debug] [Thread-1 (]: Began compiling node model.retail.report_year_invoice
+[0m11:56:38.678435 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail.report_year_invoice"
+[0m11:56:38.695581 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (compile): 11:56:38.674474 => 11:56:38.694850
+[0m11:56:38.698218 [debug] [Thread-1 (]: Began executing node model.retail.report_year_invoice
+[0m11:56:38.704579 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:56:39.568677 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail.report_year_invoice"
+[0m11:56:39.582675 [debug] [Thread-1 (]: On model.retail.report_year_invoice: /* {"app": "dbt", "dbt_version": "1.7.1", "profile_name": "retail", "target_name": "dev", "node_id": "model.retail.report_year_invoice"} */
+
+  
+    
+
+    create or replace table `online-retail-project`.`retail`.`report_year_invoice`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      SELECT
+  dt.year,
+  dt.month,
+  COUNT(DISTINCT fi.invoice_id) AS num_invoices,
+  SUM(fi.total) AS total_revenue
+FROM `online-retail-project`.`retail`.`fct_invoices` fi
+JOIN `online-retail-project`.`retail`.`dim_datetime` dt ON fi.datetime_id = dt.datetime_id
+GROUP BY dt.year, dt.month
+ORDER BY dt.year, dt.month
+    );
+  
+[0m11:56:40.237015 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=online-retail-project&j=bq:US:e1cea282-262c-4d7f-8923-103ae8bd0be3&page=queryresults
+[0m11:57:13.397618 [debug] [Thread-1 (]: Timing info for model.retail.report_year_invoice (execute): 11:56:38.700745 => 11:57:13.397294
+[0m11:57:13.399998 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8f2aeb48-792c-4bed-9d36-92c26ad18088', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9981b36c50>]}
+[0m11:57:13.402374 [info ] [Thread-1 (]: 3 of 3 OK created sql table model retail.report_year_invoice ................... [[32mCREATE TABLE (13.0 rows, 12.4 MiB processed)[0m in 34.73s]
+[0m11:57:13.404707 [debug] [Thread-1 (]: Finished running node model.retail.report_year_invoice
+[0m11:57:13.408409 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:57:13.409919 [debug] [MainThread]: Connection 'model.retail.report_year_invoice' was properly closed.
+[0m11:57:13.411356 [info ] [MainThread]: 
+[0m11:57:13.413008 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 45.60 seconds (45.60s).
+[0m11:57:13.415691 [debug] [MainThread]: Command end result
+[0m11:57:13.452867 [info ] [MainThread]: 
+[0m11:57:13.454822 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:57:13.456461 [info ] [MainThread]: 
+[0m11:57:13.459426 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m11:57:13.462569 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 48.887264, "process_user_time": 4.023743, "process_kernel_time": 1.617387, "process_mem_max_rss": "275616", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:57:13.465388 [debug] [MainThread]: Command `dbt run` succeeded at 11:57:13.465094 after 48.89 seconds
+[0m11:57:13.467713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99b7b577d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99b809fcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99b8151190>]}
+[0m11:57:13.470396 [debug] [MainThread]: Flushing usage events
