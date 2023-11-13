@@ -6,5 +6,8 @@ In this project, I designed and implemented an ELT data pipeline, leveraging Goo
 ## Architecture
 ![architecture](/retail_de_project/images/elt_diagram.png)
 
+## Aiflow Tasks
+![tasks](/retail_de_project/images/data_pipeline.png)
+
 Contact
 =======
