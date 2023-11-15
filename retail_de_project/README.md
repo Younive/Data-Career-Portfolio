@@ -12,5 +12,3 @@ In this project, I designed and implemented an ELT data pipeline, leveraging Goo
 ## Dashboard via Looker Studio
 ![dashboard](/retail_de_project/images/dashboard.png)
 
-Contact
-=======
