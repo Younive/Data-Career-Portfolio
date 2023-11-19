@@ -13,6 +13,12 @@ In this project, I designed and implemented an ELT data pipeline, leveraging Goo
 * Dashboard : [Retail Dashboard](https://lookerstudio.google.com/reporting/381987ec-9e6f-45ed-91b3-747c6375df3c)
 
 ### #3 Conizant Data Scientist Job Simulate
+This virtual internship as Data Scientist, I..
+- Completed a job simulation focused on AI for Cognizant’s Data Science team.
+- Conducted exploratory data analysis using Python script and Python notebook  for one of Cognizant’s technology-led clients, Gala Groceries.
+- Prepared a Python module that contains code to train a model and output the performance metrics for the Machine Learning engineering team.
+- Communicated findings and analysis in the form of a PowerPoint slide to  present the results back to the business.
+
 
 ### #4 Simple LLM Chatbot
 I developed LLM Chatbot using Langchain Framework and OpenAI as based LLM model. The chatbot can answer online course questions by understanding the context of the question and matching it with prepared prompts and answers.
