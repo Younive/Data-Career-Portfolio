@@ -5,18 +5,23 @@
 In this project, I designed and implemented an ETL data pipeline using Google Cloud Storage as Data Lake, Google BigQuery as Data Warehouse and Google Cloud Composer for runing Apache Airflow as Data Orchestrator.
 This system is running on Google Cloud Platform.
 * Technology used : Google Cloud Storage, Google BigQuery,  Airflow, Looker Studio.
+* Architechture Diagram :
+
+  ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/GCP-Data_Engineer-Project/GCP_pipeline_diagram.jpg)
+  
 * Dashboard : [Audible Sale Dashboard](https://lookerstudio.google.com/reporting/848e065d-171a-4f3f-8c79-06672c286890)
-* Architechture Diagram : ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/GCP-Data_Engineer-Project/GCP_pipeline_diagram.jpg)
 
 ### [ELT] Retail Data Engineer Project
 In this project, I designed and implemented an ELT data pipeline, leveraging Google Cloud Storage as a robust Data Lake, Google BigQuery as a high-performance Data Warehouse, and Apache Airflow as the orchestrator. The entire system is seamlessly orchestrated locally through the Astro CLI.
 * Technology used: Google Cloud Storage, Google BigQuery,  Airflow, Looker Studio, DBT Core, Docker
-* Dashboard : [Retail Dashboard](https://lookerstudio.google.com/reporting/381987ec-9e6f-45ed-91b3-747c6375df3c)
-
-  ![Retail Dashboard](https://github.com/Younive/Data-Career-Portfolio/blob/main/retail_de_project/images/dashboard.png)
 * Architechture Diagram :
 
   ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/retail_de_project/images/elt_diagram.png)
+  
+* Dashboard : [Retail Dashboard](https://lookerstudio.google.com/reporting/381987ec-9e6f-45ed-91b3-747c6375df3c)
+
+  ![Retail Dashboard](https://github.com/Younive/Data-Career-Portfolio/blob/main/retail_de_project/images/dashboard.png)
+
 
 ### Real-Time Twitter(X) Sentiment Analysis
 The extraction process is done using NiFi and Kafka, The data is streamed from the twitter API using NiFi followed by creation of topics and publishing tweets in NiFi using apache Kafka.
