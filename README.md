@@ -14,13 +14,17 @@ In this project, I designed and implemented an ELT data pipeline, leveraging Goo
 * Dashboard : [Retail Dashboard](https://lookerstudio.google.com/reporting/381987ec-9e6f-45ed-91b3-747c6375df3c)
 
   ![Retail Dashboard](https://github.com/Younive/Data-Career-Portfolio/blob/main/retail_de_project/images/dashboard.png)
-* Architechture Diagram : ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/retail_de_project/images/elt_diagram.png)
+* Architechture Diagram :
+
+  ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/retail_de_project/images/elt_diagram.png)
 
 ### Real-Time Twitter(X) Sentiment Analysis
 The extraction process is done using NiFi and Kafka, The data is streamed from the twitter API using NiFi followed by creation of topics and publishing tweets in NiFi using apache Kafka.
 In the transformation and load process, schema is extracted from the stream of tweets and reading of data from apache Kafka as streaming a dataframe. After cleansing and analyzing sentiments, data will be written in MongoDB for the visualization.
 * Technology used: Apache NiFi, Apache Kafka, Apache Spark, MongoDB, Docker
-* Architechture Diagram : ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/realtime_twitter_sentiment_analysis/images/realtime_stream_diagram.png)
+* Architechture Diagram :
+
+  ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/realtime_twitter_sentiment_analysis/images/realtime_stream_diagram.png)
 
 ### Conizant Data Scientist Job Simulate
 This virtual internship as Data Scientist, I..
