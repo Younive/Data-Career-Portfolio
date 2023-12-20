@@ -3,18 +3,9 @@
 version: "3.6"
 volumes:
   shared-workspace:
-    name: "hadoop-distributed-file-system"
+    name: "real-time_twitter_sentiment_analysis"
     driver: local
 services:
-  jupyterlab:
-    image: pavansrivathsa/jupyterlab
-    container_name: jupyterlab
-    ports:
-      - 4888:4888
-      - 4040:4040
-      - 8050:8050
-    volumes:
-      - shared-workspace:/opt/workspace
   spark-master:
     image: pavansrivathsa/spark-master
     container_name: spark-master
@@ -35,18 +26,7 @@ services:
       - shared-workspace:/opt/workspace
     depends_on:
       - spark-master
-  spark-worker-2:
-    image: pavansrivathsa/spark-worker
-    container_name: spark-worker-2
-    environment:
-      - SPARK_WORKER_CORES=1
-      - SPARK_WORKER_MEMORY=512m
-    ports:
-      - 4082:4081
-    volumes:
-      - shared-workspace:/opt/workspace
-    depends_on:
-      - spark-master
+
   zookeeper:  # the configuration manager
     hostname: zookeeper
     container_name: zookeeper
@@ -71,7 +51,7 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
   nifi:
     hostname: NiFi
-    image: apache/nifi
+    image: pavansrivathsa/nifi
     ports:
       - 2080:2080
     environment:
