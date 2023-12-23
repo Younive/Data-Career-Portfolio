@@ -26,7 +26,7 @@ In this project, I designed and implemented an ELT data pipeline, leveraging Goo
 
 * Architechture Diagram :
 
-  ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/weather_monitoring/images/architechture.png)
+  ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/weather_monitoring/images/architechture.png)
   
 * Result : 
 
