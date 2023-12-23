@@ -22,7 +22,7 @@ In this project, I designed and implemented an ELT data pipeline, leveraging Goo
 
   ![Retail Dashboard](https://github.com/Younive/Data-Career-Portfolio/blob/main/retail_de_project/images/dashboard.png)
 
-### Weather Monitoring DE Project
+### Weather Monitoring Data Streaming Project
 
 * Architechture Diagram :
 
