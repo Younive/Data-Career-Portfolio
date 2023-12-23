@@ -23,7 +23,7 @@ In this project, I designed and implemented an ELT data pipeline, leveraging Goo
   ![Retail Dashboard](https://github.com/Younive/Data-Career-Portfolio/blob/main/retail_de_project/images/dashboard.png)
 
 ### Weather Monitoring Data Streaming Project
-
+* Technology used: Google Cloud Storage, Google BigQuery,  Airflow, Looker Studio, DBT Core, Docker
 * Architechture Diagram :
 
   ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/weather_monitoring/images/architechture.png)
@@ -33,6 +33,7 @@ In this project, I designed and implemented an ELT data pipeline, leveraging Goo
   ![cassandra_result](https://github.com/Younive/Data-Career-Portfolio/blob/main/weather_monitoring/images/sample_cassandra.png)
 
 * Next step: use Airflow for orchestration
+             Cloud Infrastructure (AWS)
 
 ### Real-Time Twitter(X) Sentiment Analysis
 The extraction process is done using NiFi and Kafka, The data is streamed from the twitter API using NiFi followed by creation of topics and publishing tweets in NiFi using apache Kafka.
