@@ -23,7 +23,7 @@ In this project, I designed and implemented an ELT data pipeline, leveraging Goo
   ![Retail Dashboard](https://github.com/Younive/Data-Career-Portfolio/blob/main/retail_de_project/images/dashboard.png)
 
 ### Weather Monitoring Data Streaming Project
-* Technology used: Google Cloud Storage, Google BigQuery,  Airflow, Looker Studio, DBT Core, Docker
+* Technology used: Apache Kafka, Apache Spark, Apache Cassandra, Docker
 * Architechture Diagram :
 
   ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/weather_monitoring/images/architechture.png)
