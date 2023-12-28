@@ -30,6 +30,8 @@ In the transformation and load process, schema is extracted from the stream of t
 
   ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/realtime_twitter_sentiment_analysis/images/realtime_stream_diagram.png)
 
+### [ETL] HADOOP Data Pipeline
+
 ### Conizant Data Scientist Job Simulate
 This virtual internship as Data Scientist, I..
 - Completed a job simulation focused on AI for Cognizant’s Data Science team.
