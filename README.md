@@ -23,8 +23,10 @@ In this project, I designed and implemented an ELT data pipeline, leveraging Goo
   ![Retail Dashboard](https://github.com/Younive/Data-Career-Portfolio/blob/main/retail_de_project/images/dashboard.png)
 
 ### Weather Monitoring Stream Data Pipeline
+The extraction process is done using  Kafka, The data is streamed from the OpenWeatherMap API followed by creation of topics and publishing using Apache Kafka.
+In the transformation and load process, schema is extracted from the stream of data from API and reading of data from apache Kafka as streaming a dataframe. Then, data will be written in Cassandra for further data usage.
 
-* Technology used: Apache NiFi, Apache Kafka, Apache Spark, MongoDB, Docker
+* Technology used: Apache Kafka, Apache Spark, Cassandra, Docker
 * Architechture Diagram :
 
   ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/weather_monitoring/images/architechture.png)
