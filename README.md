@@ -11,6 +11,8 @@ This system is running on Google Cloud Platform.
   
 * Dashboard : [Audible Sale Dashboard](https://lookerstudio.google.com/reporting/848e065d-171a-4f3f-8c79-06672c286890)
 
+---
+
 ### [ELT] Retail Data Engineer Project
 In this project, I designed and implemented an ELT data pipeline, leveraging Google Cloud Storage as a robust Data Lake, Google BigQuery as a high-performance Data Warehouse, and Apache Airflow as the orchestrator. The entire system is seamlessly orchestrated locally through the Astro CLI.
 * Technology used: Google Cloud Storage, Google BigQuery,  Airflow, Looker Studio, DBT Core, Docker
@@ -21,6 +23,8 @@ In this project, I designed and implemented an ELT data pipeline, leveraging Goo
 * Dashboard : [Retail Dashboard](https://lookerstudio.google.com/reporting/381987ec-9e6f-45ed-91b3-747c6375df3c)
 
   ![Retail Dashboard](https://github.com/Younive/Data-Career-Portfolio/blob/main/retail_de_project/images/dashboard.png)
+
+---
 
 ### Weather Monitoring Stream Data Pipeline
 The extraction process is done using  Kafka, The data is streamed from the OpenWeatherMap API followed by creation of topics and publishing using Apache Kafka.
@@ -35,9 +39,21 @@ In the transformation and load process, schema is extracted from the stream of d
 
 ![cassandra](https://github.com/Younive/Data-Career-Portfolio/blob/main/weather_monitoring/images/sample_cassandra.png)
 
+---
+
 ### [ETL] HADOOP Data Pipeline
 
-### Sentiment Analysis Machine Learning
+* Architechture Diagram :
+
+  ![Diagram](https://github.com/Younive/Data-Career-Portfolio/blob/main/hadoop_data_pipeline/media/hadoop_pipeline_architechture.png)
+
+* Next step development : - replace Flume with Kafka
+
+---
+
+### [ML] Sentiment Analysis Machine Learning
+
+---
 
 ### Conizant Data Scientist Job Simulate
 This virtual internship as Data Scientist, I..
@@ -45,6 +61,9 @@ This virtual internship as Data Scientist, I..
 - Conducted exploratory data analysis using Python script and Python notebook  for one of Cognizant’s technology-led clients, Gala Groceries.
 - Prepared a Python module that contains code to train a model and output the performance metrics for the Machine Learning engineering team.
 - Communicated findings and analysis in the form of a PowerPoint slide to  present the results back to the business.
+
+---
+
 
 
 ### Simple LLM Chatbot
