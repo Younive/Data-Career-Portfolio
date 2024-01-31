@@ -26,7 +26,7 @@ In this project, I designed and implemented an ELT data pipeline, leveraging Goo
 
 ---
 
-### Weather Monitoring Stream Data Pipeline
+### [Streaming] Weather Monitoring Stream Data Pipeline
 The extraction process is done using  Kafka, The data is streamed from the OpenWeatherMap API followed by creation of topics and publishing using Apache Kafka.
 In the transformation and load process, schema is extracted from the stream of data from API and reading of data from apache Kafka as streaming a dataframe. Then, data will be written in Cassandra for further data usage.
 
@@ -57,6 +57,10 @@ In the transformation and load process, schema is extracted from the stream of d
 - Created the pipeline to train the model, there are 5 stages including tokenizing, removing stop word, CountVectorization and Logistic regression.
 - The model was evaluated using a Binary Classification Evaluator on a total of 9003 rows of test data. The results indicate that the model correctly predicted 7776 rows, while 1227 rows were predicted incorrectly.
 
+---
+### [MLE] Fast ML API
+
+Deploy Machine Learining model as an ML API using FastAPI
 ---
 
 ### Conizant Data Scientist Job Simulate
