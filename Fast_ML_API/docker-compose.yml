@@ -1,0 +1,30 @@
+version: '3.1'
+
+services:
+  mongo:
+    image: mongo
+    restart: always
+    container_name: lmwn-mongo
+    ports:
+      - ${MONGODB_PORT}:${MONGODB_PORT}
+    volumes:
+      - /var/lib/mongo:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_PASSWORD}
+
+  fast-api:
+    build: .
+    container_name: lmwn-fast-api
+    restart: always
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      - MONGODB_USERNAME=${MONGODB_USERNAME}
+      - MONGODB_PASSWORD=${MONGODB_PASSWORD}
+      - MONGODB_PORT=${MONGODB_PORT}
+      - DATABASE_NAME=${DATABASE_NAME}
+      - PORT=${PORT}
+      - MONGODB_HOST=lmwn-mongo
+    depends_on:
+      - mongo
