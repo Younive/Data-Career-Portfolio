@@ -60,7 +60,8 @@ In the transformation and load process, schema is extracted from the stream of d
 ---
 ### [MLE] Fast ML API
 
-Deploy Machine Learining model as an ML API using FastAPI
+#### Deploy Machine Learining model as an ML API using FastAPI
+
 ---
 
 ### Conizant Data Scientist Job Simulate
