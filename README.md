@@ -51,7 +51,11 @@ In the transformation and load process, schema is extracted from the stream of d
 
 ---
 
-### [ML] Sentiment Analysis Machine Learning
+### [ML] Sentiment Analysis Machine Learning Model
+- This project is developed in SparkML, using Amazon sports and outdoors products review as a dataset.
+- There's the overall score which has a score range 1.0 to 5.0. I dropped rows  where the overall score is 3.0 due to ambiguous sentiment, however, there's more than enough data for training and testing.
+- Created the pipeline to train the model, there are 5 stages including tokenizing, removing stop word, CountVectorization and Logistic regression.
+- The model was evaluated using a Binary Classification Evaluator on a total of 9003 rows of test data. The results indicate that the model correctly predicted 7776 rows, while 1227 rows were predicted incorrectly.
 
 ---
 
