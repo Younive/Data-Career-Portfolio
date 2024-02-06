@@ -11,6 +11,10 @@ This system is running on Google Cloud Platform.
   
 * Dashboard : [Audible Sale Dashboard](https://lookerstudio.google.com/reporting/848e065d-171a-4f3f-8c79-06672c286890)
 
+  ![Audible Dashboard page1](https://github.com/Younive/Data-Career-Portfolio/blob/main/GCP-Data_Engineer-Project/img/sale_dashboard_1.png)
+  
+  ![Audible Dashboard page2](https://github.com/Younive/Data-Career-Portfolio/blob/main/GCP-Data_Engineer-Project/img/sale_dashboard_2.png)
+
 ---
 
 ### [ELT] Retail Data Engineer Project
