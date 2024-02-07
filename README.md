@@ -67,6 +67,13 @@ In the transformation and load process, schema is extracted from the stream of d
 #### Deploy Machine Learining model as an ML API using FastAPI
 
 ---
+### ABC Theater Database
+
+* ER Diagram :
+
+  ![erd](https://github.com/Younive/Data-Career-Portfolio/blob/main/abc_theater_db/abc_theater_erd.jpg)
+  
+---
 
 ### Conizant Data Scientist Job Simulate
 This virtual internship as Data Scientist, I..
